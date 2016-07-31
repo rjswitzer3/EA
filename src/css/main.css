@@ -1,0 +1,162 @@
+/***type***/
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 200;
+}
+
+h2{
+	font-size:40px;
+	margin-top:0px;
+}
+
+h3{
+	font-size: 28px;
+}
+
+
+p{
+	font-weight: 200;
+	font-size: 16px;
+	font-family: "Geneva", Arial, sans-serif;
+}
+
+a:hover, a:visited{
+	color:#fff;
+	cursor:pointer;
+}
+
+.op-5{opacity:.5;}
+
+
+/*****buttons************/
+.btn.btn-primary{
+	box-shadow: none;
+	border:0px;
+	border-radius: 0px;
+	background-image: none;
+	background-color: #0c8b9e;
+	padding:10px 40px;
+}
+
+.btn.btn-primary:hover{
+	color:#0c8b9e;
+	background:#fff;
+	cursor:pointer;
+}
+
+
+/*****general*****/
+
+ /******COlOR 7b2e00 0c8b9e *******/
+
+hr{
+	opacity:.1;
+}
+
+.margin-top{
+	margin-top:30px;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.full-bg{
+min-height: 980px;
+background: #D93600;
+background: url('../img/bg_school-colors.jpg')no-repeat center center;
+background-size: cover;
+color: #FFF;
+z-index: 2;
+}
+
+.info-section{
+	color:#fff;
+	background-color: #000000;/*#7b2e00;*/
+	padding:50px 0px 50px 0px;
+	/*background: url('../img/natural_paper_@2X.jpg') center center;*/
+	background-size: contain;
+}
+
+.info-section p{
+	color:#d7cbc4;
+}
+
+.logo{
+background: url('../img/logo.png') center center no-repeat;
+background-size: contain;
+display: block;
+text-indent: -99999px;
+min-height: 150px;
+margin-top:200px;
+opacity: 0.0; /* REMOVE AFTER LOGO UPLOADED*/
+}
+
+.intro{
+	font-size:20px;
+	margin-bottom: 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.icon-block {
+	margin-bottom: 40px;
+	padding:0px 30px;
+}
+
+.icon-block h4{
+	margin: 13px 0px 0px 0px;
+	line-height: 24px;
+}
+
+.icon-block i{
+	background-color:#0d8b9e;
+	border-radius: 50%;
+	height:60px;
+	width:60px;
+	padding-top:20px;
+	font-size: 22px;
+}
+
+.grow-link{
+	color:#fff;
+	font-size:18px;
+	text-decoration: underline;
+		padding:10px 10px;
+		line-height: 28px;
+}
+
+.grow-link:hover{
+	color:#7b2e00;
+	background:#fff;
+
+}
+
+footer{
+	font-size: 11px;
+	color:#000;
+}
+
+/***************PHONE*****************/
+
+  @media only screen and (max-width : 767px) {
+
+  }
+
+/***************Wider*****************/
+  @media only screen and (max-width : 991px) {
+
+
+  	}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+
+
+}
+
+
+
+
+
+
+
