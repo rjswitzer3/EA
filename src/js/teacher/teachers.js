@@ -1,11 +1,11 @@
-var studentCollection = [
+var teacherCollection = [
   {
-    "username": "student",
-    "firstname": "John",
-    "lastname": "Doe",
+    "username": "teacher",
+    "firstname": "Alexis",
+    "lastname": "Rack",
+    "formalname": "Mrs. Rack",
     "password": "none",
-    "email": "jdoe66@gmail.com",
-    "points": "243",
+    "email": "lexirack100@gmail.com",
     "courses": ["Calculus I","Linear Algebra"],
     "school": "Rochester Institute of Technology",
     "city": "Rochester",
