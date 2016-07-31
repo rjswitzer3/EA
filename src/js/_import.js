@@ -20,16 +20,6 @@ var VENDOR = [
                   ['9fdf80e721a6','Sysco'],
                   ['be233733f9ca','US. Foods']
                   ];
-                  
-var PARADISE_QUOTES = [
-['Never have I ever felt this way for'],
-['She was my first girlfriend.'],
-['She never left my side through the thick and thin.'],
-['Because I have been falling for her'],
-['She said she didnt want a relationship.'],
-['She likes me but wants to see where things will go'],
-['She"s still torn about Matt'],
-];
 
 var MAX_LENGTH = 9;
                   
@@ -114,7 +104,7 @@ function import_ven(){
   var store = $("#ddlStores option:selected").text();
   var vendor = $("#ddlVendors option:selected").text();
   var file = $("#VendorFile")[0].files[0].name;
-  var status = "Success";
+  var status = "Pending";
   var version = $("#VendorFile")[0].files[0].lastModifiedDate;
   version = dateFormat(version);
   
@@ -135,6 +125,7 @@ $(document).ready( function() {
   $("#btnSubmit").attr("disabled", "disabled");
   $("#btnRequest").attr("disabled", "disabled");
   $("#divRequest").hide();
+  setup();
   
   // On store selection
   $(document).on('change', '#ddlStores', function(){
