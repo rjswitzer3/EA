@@ -37,3 +37,6 @@ var studentCollection = [
   },
 
 ]
+function pubStudentCollection() {
+  return studentCollection;
+}

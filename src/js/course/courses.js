@@ -20,3 +20,7 @@ var courseCollection = [
     "assignments": ["HW1_id","Quiz1_id","HW2_id"],
   },
 ]
+
+function pubCourseCollection() {
+  return courseCollection;
+}

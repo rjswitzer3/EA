@@ -106,6 +106,7 @@
 
          <script src="js/nav_cog.js"></script>
          <script src="js/_nav.js"></script>
+         <script src="js/student/students.js"></script>
 
         <script type="text/javascript">
             // Update the navigation bar(s) based on route
@@ -118,6 +119,9 @@
                 if (!$(".validation-summary-errors").has("button").length) {
                     $('.validation-summary-errors').prepend('<button type="button" class="close" data-dismiss="alert">×</button>');
                 }
+                
+                var user = pubStudentCollection();
+                alert(user[0]._id);
             });
 
             $("form").each(function () {

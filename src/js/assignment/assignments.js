@@ -16,3 +16,7 @@ var assignmentCollection = [
   },
 
 ]
+
+function pubAssignmentCollection() {
+  return assignmentCollection;
+}

@@ -37,3 +37,7 @@ var teacherCollection = [
   },
 
 ]
+
+function pubTeacherCollection() {
+  return teacherCollection;
+}
