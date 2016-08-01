@@ -16,7 +16,8 @@ var studentCollection = [
           "4cb295fe-e516-4a8b-4abd-94e5da43856c",
           ],
         "students": ["3d3ad3ad-5bce-a672-fddf-bd57ba0190bd",],
-        "assignments": ["HW1","HW2"],
+        "assignments": [
+          "d979c77d-0408-827d-153b-b6bf656e6d40","HW2_id"],
       },
       {
         "_id": "978a0f93-cff4-3d9d-9cff-ef36f202176a",
@@ -36,7 +37,8 @@ var studentCollection = [
     "phone": "",
   },
 
-]
+];
+
 function pubStudentCollection() {
   return studentCollection;
 }

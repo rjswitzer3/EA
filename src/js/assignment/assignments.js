@@ -1,6 +1,7 @@
 var assignmentCollection = [
   {
     "_id": "e3968d58-29ef-7784-1ac9-75eaf5fa8ad6",
+    "submissionId": "",
     "assignmentname": "HW I",
     "courseId": "d979c77d-0408-827d-153b-b6bf656e6d40",
     "teacher": "Mrs. Rack",
@@ -16,8 +17,7 @@ var assignmentCollection = [
     "file": "",
     "submissionFile": ""
   },
-
-]
+];
 
 function pubAssignmentCollection() {
   return assignmentCollection;

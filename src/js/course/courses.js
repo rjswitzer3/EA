@@ -19,7 +19,7 @@ var courseCollection = [
     "students": ["3d3ad3ad-5bce-a672-fddf-bd57ba0190bd",],
     "assignments": ["HW1_id","Quiz1_id","HW2_id"],
   },
-]
+];
 
 function pubCourseCollection() {
   return courseCollection;

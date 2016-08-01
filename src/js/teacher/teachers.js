@@ -36,7 +36,7 @@ var teacherCollection = [
     "phone": "",
   },
 
-]
+];
 
 function pubTeacherCollection() {
   return teacherCollection;
