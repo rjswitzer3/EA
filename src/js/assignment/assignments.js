@@ -10,7 +10,9 @@ var assignmentCollection = [
     "dueDate": "7/31/16",
     "submitDate": "7/21/16",
     "grade": "B",
-    "points": "88"
+    "points": "88",
+    "studentNotes": "",
+    "teacherNotes": "",
   },
 
 ]
