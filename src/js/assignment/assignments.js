@@ -13,6 +13,8 @@ var assignmentCollection = [
     "points": "88",
     "studentNotes": "",
     "teacherNotes": "",
+    "file": "",
+    "submissionFile": ""
   },
 
 ]
