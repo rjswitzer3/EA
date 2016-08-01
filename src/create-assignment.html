@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+    <head>
+        <meta charset="utf-8">
+        <title>Eager Academy | Manage Taught Courses</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/title_logo.png" type="image/x-icon">
+        <link href="css/_layout.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="img/EA_Logo.jpg" alt="Agora" style="margin-top: -8px; max-height: 160%"/></a>
+            </div>
+            <div class="navbar-collapse collapse" >
+              <ul id="topnavsection" class="nav navbar-nav">
+                   <li id="navImport"><a href="teacher-home.html">Home</a></li>
+                   <li id="navOrder"><a href="">Events</a></li>
+                   <!--
+                        TODO: Remove comments when contact page is done
+                        <li id="navOrder"><a href="/">Contact</a></li>
+                   -->
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" style="z-index: 10">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog" /><b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="z-index: 10">
+                            <li class = "main-nav-link"><a href="teacher-edit-info.html">Account</a></li>
+                            <li class = "main-nav-link"><a href="create-course.html">Courses</a></li>
+
+                            <li class = "main-nav-link">
+<form action="/Account/LogOff" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="8Z2kOh0R0gFDHCk6X4Al5dKGqpZcuBkKvWhvJWmH9p8VNojZ1TytuQ5IaldoRN309V4i8SCfYJAvnlukRyceFfv_tfCMX9oESuA4Zz8_Md0lrVkACgU_YDyYq8VRSlDWQgccVlabnpZnsYs7icd9dJFfQu5EQW7pD1sqranDisk1" />                                    <a class="logout" href="login.html">Log off</a>
+</form>                           </li>
+                        </ul>
+                    </li>
+              </ul>
+
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+
+
+
+<!--div class="navbar navbar-inverse navbar-fixed-top" style="top:45px; z-index: 1" >
+  <div class="container" style="padding-left: 80px;">
+      <div class="navbar-header">
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul id="auxnavsection" class="nav navbar-nav">
+          <li id="navInfo"><a href="manage_info.html">Account</a></li>
+          <li id="navStores"><a href="import_store.html">Restaurants</a></li>
+        </ul>
+      </div>
+  </div>
+</div-->
+<br /><br /><br />
+
+
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+    <div class="row text-header">
+        <div class="col-lg-4">
+            <h1>Manage Taught Courses</h1>
+        </div>
+        <div class="col-lg-8">
+         <!--   <div class="alert alert-dismissable alert-info"> -->
+          <p>  Here you can add and manage courses being taught.</p>
+           <!--    </div> -->
+        </div>
+    </div>
+
+    <div class="row">
+
+
+    <div id="divStoreEdit" class="col-lg-6" >
+      <input id="StoreKey" name="StoreKey" type="hidden" value="af3ed0ad8cf6" />
+      <div class="well">
+        <div class="row">
+          <div class="col-lg-8">
+            <span>
+                <!-- <label for="Name_Name">Name</label> -->
+                <input class="form-control" data-val="true" data-val-required="The Name field is required." id="CourseName" name="Course Name" placeholder="CourseName" type="text" value="Calculus I" />
+                <input class="form-control" data-val="true" disabled="true" data-val-required="The Course Id is required" id="CourseId" name="CourseId" placeholder="CourseId" type="text" value="MATH-201" />
+            </span>
+          </div>
+            <div class="col-lg-1 col-lg-offset-3">
+                <button name="DeleteStore" type="submit" class="close" title="Delete" style="color: #000000">×</button>
+            </div>
+        </div>
+            <br />
+        <div class="row">
+          <div class="col-lg-12" style="height: 100px">
+            <span>
+                <textarea class="form-control" cols="20" id="Description" name="Description" placeholder="Description" rows="4">
+            Students shall learn about all the horrific wonders of calculus. </textarea>
+            </span>
+          </div>
+        </div>
+            <br />
+        </div>
+    </div>
+    
+
+    
+    <div id="divStoreEdit" class="col-lg-6" >
+      <input id="StoreKey" name="StoreKey" type="hidden" value="54453c9c5050" />
+      <div class="well">
+        <div class="row">
+          <div class="col-lg-8">
+            <span>
+                <!-- <label for="Name_Name">Name</label> -->
+                <input class="form-control" data-val="true" data-val-required="The Name field is required." id="CourseName" name="Course Name" placeholder="CourseName" type="text" value="Calculus II" />
+                <input class="form-control" data-val="true" disabled="true" data-val-required="The Course Id is required." id="CourseId" name="CourseId" placeholder="CourseId" type="text" value="MATH-222" />
+            </span>
+          </div>
+          <div class="col-lg-1 col-lg-offset-3">
+              <button name="DeleteStore" type="submit" class="close" title="Delete" style="color: #000000">×</button>
+          </div>
+        </div>
+            <br />
+        <div class="row">
+          <div class="col-lg-12" style="height: 100px">
+            <span>
+                <textarea class="form-control" cols="20" id="Description" name="Description" placeholder="Description" rows="4">
+            Students shall become enthralled in a world of hatred for math.</textarea>
+            </span>
+          </div>
+        </div>
+            <br />
+        </div>
+    </div>
+
+          
+           </div>
+            <div class="row">
+
+
+    <div id="divStoreEdit" class="col-lg-6" >
+      <input id="StoreKey" name="StoreKey" type="hidden" value="66244d499503" />
+      <div class="well">
+        <div class="row">
+          <div class="col-lg-8">
+            <span>
+                <!-- <label for="Name_Name">Name</label> -->
+                <input class="form-control" data-val="true" data-val-required="The Name field is required." id="CourseName" name="CourseName" placeholder="Course Name" type="text" value="Linear Algebra" />
+                <input class="form-control" data-val="true" disabled="true" data-val-required="The Course Id is required." id="CourseId" name="CourseId" placeholder="CourseId" type="text" value="MATH-309" />
+            </span>
+          </div>
+          <div class="col-lg-1 col-lg-offset-3">
+              <button name="DeleteStore" type="submit" class="close" title="Delete" style="color: #000000">×</button>
+          </div>
+        </div>
+            <br />
+        <div class="row">
+          <div class="col-lg-12" style="height: 100px">
+            <span>
+                <textarea class="form-control" cols="20" id="Description" name="Description" placeholder="Description" rows="4">
+            Thought algebra was fun and games? Not anymore.</textarea>
+            </span>
+          </div>
+        </div>
+          <br />
+        </div>
+    </div>
+    </div>
+    
+    
+        <div class="row">
+          <div class="col-lg-6" style="height: 300px">
+<!--form action="_import_new_static.html" method="post"-->
+            <input data-val="true" data-val-required="The Boolean field is required." id="HideHelp" name="HideHelp" type="hidden" value="false" />
+              <a class="btn btn-primary" href=""><input id="btnAddStore" type="submit" class="btn btn-primary" value="Add Course" /></a>
+<!--/form-->
+          </div>
+        </div>
+
+            <hr>
+            <footer>
+                <p></p>
+            </footer>
+
+        </div>
+
+         <script src="js/nav_cog.js"></script>
+         <script src="js/_nav.js"></script>
+
+
+        <script type="text/javascript">
+            // Update the navigation bar(s) based on route
+            $(document).ready(function () {
+                var controllerName = 'Business';
+                var actionName = 'ManageStores';
+                updateNavBars(controllerName, actionName);
+
+                $('.validation-summary-errors').addClass('alert alert-dismissable alert-danger');
+                if (!$(".validation-summary-errors").has("button").length) {
+                    $('.validation-summary-errors').prepend('<button type="button" class="close" data-dismiss="alert">×</button>');
+                }
+            });
+
+            $("form").each(function () {
+                var $this = $(this);
+                $this.submit(function () {
+                    // If invalid change the validation summary to bootstrap style
+                    if (!$this.valid()) {
+                        $('.validation-summary-errors').addClass('alert alert-dismissable alert-danger');
+                        if (!$(".validation-summary-errors").has("button").length) {
+                            $('.validation-summary-errors').prepend('<button type="button" class="close" data-dismiss="alert">×</button>');
+                        }
+                        window.scrollTo(0, 0);
+                        return false;
+                    }
+                });
+            });
+
+
+        </script>
+
+    <script type="text/javascript">
+
+    var STORES = [["Aladdin's Natural Eatery","Aladdin's Natural Eatery uses only the freshest and finest ingredients in the preparation of our dishes. ","af3ed0ad8cf6"],
+                  ["Carrabba's Italian Grill","Carrabba's Italian Grill provides a diverse menu of Italian cuisine in a lovely family setting.","54453c9c5050"],
+                  ["Olive Garden","Italian cuisine presented in a casual atmosphere.","66244d499503"],
+                  ["Outback Steakhouse","Australian-themed American casual dinning.","055a4ef1ca4e"]
+                  ];
+
+        function updateStoreName(storeKey,name){
+          var action = $('#divStoreEdit').text();
+
+          for(var i=0;i<STORES.length;i++){
+            if(STORES[i][2] == storeKey){
+              STORES[i][0] = name;
+            }
+          }
+        }
+        /*ONLINE
+        function updateStoreName(storeKey, name) {
+            var action = '/Business/UpdateStoreName';
+            var data = {storeKey: storeKey, name: name};
+            $.ajax({
+                url: action,
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json'
+            });
+        }*/
+
+        function updateStoreDescription(storeKey, description) {
+            var action = '/Business/UpdateStoreDescription';
+            var data = { storeKey: storeKey, description: description };
+            $.ajax({
+                url: action,
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json'
+            });
+        }
+
+        function updateVendorClickHandler(link) {
+            var storeKey = link.parents('div[id=divStoreEdit]').children('input[id=StoreKey]').val();
+            var vendorKey = link.prev().val();
+            var newStatus = !(link.hasClass('active'));
+            updateVendorStatus(storeKey, vendorKey, newStatus, link);
+        }
+
+        function updateVendorStatus(storeKey, vendorKey, status, vendorLink) {
+            var action = '/Business/UpdateVendorStatus';
+            var data = { storeKey: storeKey, vendorKey: vendorKey, active: status };
+            $.ajax({
+                url: action,
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function (result) {
+                    // Update the highlighting to reflect enabled/disabled
+                    if (result.success) {
+                        if (status) {
+                            vendorLink.addClass('active');
+                        }
+                        else {
+                            vendorLink.removeClass('active');
+                        }
+                    }
+                }
+            });
+        }
+
+        function addVendorToStore(storeKey, vendorKey, vendorName, addSelect, storeVendors) {
+            var action = '/Business/AddVendorToStore';
+            var data = { storeKey: storeKey, vendorKey: vendorKey };
+            $.ajax({
+                url: action,
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function (result) {
+                    if (result.success) {
+                        //  Add the vendor to the list of vendors and set it to active.
+                        var hiddenVendorID = $("<input type='hidden' value='" + vendorKey + "' name='VendorKey' />");
+                        var vendorActiveLink = $("<a href='javascript:;' class='list-group-item active' name='ActivateVendor'>" + vendorName + "</a>");
+                        storeVendors.append(hiddenVendorID);
+                        vendorActiveLink.click(function () {
+                            updateVendorClickHandler($(this));
+                        }).appendTo(storeVendors);
+
+                        // Remove the vendor from add and set index to default
+                        addSelect.find("option[value=" + vendorKey + "]").remove();
+                        addSelect.val('');
+                    }
+                }
+            });
+        }
+
+        //CREAT DELETE STORE FX
+        function deleteStore(storeKey) {
+            var action = '/Business/DeleteStore';
+            var data = { storeKey: storeKey };
+            $.post(action, data, function () {
+                var url = window.location.href;
+                if(hideHelp && url.indexOf("?hideHelp") == -1)
+                {
+                    url += '?hideHelp=true';
+                }
+                window.location.href = url;
+                // location.reload();
+            });
+        }
+
+        var hideHelp = false;
+        $(document).ready(function () {
+            // Initialize the handlers
+            $('input[name=Name]').change(function () {
+                var input = $(this);
+                var storeKey = input.parents('div[id=divStoreEdit]').children('input[id=StoreKey]').val();
+                var newName = input.val();
+                if (/^\s*$/.test(newName)) {
+                    // Contains only whitespace indicate error
+                    input.parent('span').addClass('has-error');
+                    input.attr('placeholder', 'Store Name (required)');
+                }
+                else {
+                    // Contains a value, so update it
+                    updateStoreName(storeKey, newName);
+                    input.attr('placeholder', 'Store Name');
+                }
+            });
+
+            $('textarea[name=Description]').change(function () {
+                var storeKey = $(this).parents('div[id=divStoreEdit]').children('input[id=StoreKey]').val();
+                var newDescription = $(this).val();
+                updateStoreDescription(storeKey, newDescription);
+            });
+
+            $('a[name=ActivateVendor]').click(function () {
+                updateVendorClickHandler($(this));
+            });
+            /*
+            $('select[name=VendorAdd]').change(function () {
+                var vendorKey = $(this).val();
+                if (vendorKey != '') {
+                    var vendorName = $(this).children("option:selected").text();
+                    var storeInfo = $(this).parents('div[id=divStoreEdit]');
+                    var storeKey = storeInfo.children('input[id=StoreKey]').val();
+                    var storeVendorsGroup = storeInfo.find('.list-group');
+                    addVendorToStore(storeKey, vendorKey, vendorName, $(this), storeVendorsGroup);
+                }
+            });*/
+
+
+            $('button[name=DeleteStore]').click(function () {
+                var storeInfo = $(this).parents('div[id=divStoreEdit]');
+                var storeKey = storeInfo.children('input[id=StoreKey]').val();
+                var storeName = storeInfo.find('input[name=Name]').val();
+                bootbox.confirm("Are you sure you want to delete " + storeName + "? This action"
+                                 + " cannot be reversed and will remove all pricing information uploaded"
+                                 + " to this store.",
+                    function (result) {
+                        if (result) {
+                            deleteStore(storeKey);
+                        }
+                });
+            });
+
+            $('#btnHideHelp').click(function () {
+                hideHelp = true;
+                $('input[name=HideHelp]').val(true);
+            });
+
+            $('#btnAddStore').click(function() {
+
+
+            })
+        });
+    </script>
+
+
+    </body>
+</html>
