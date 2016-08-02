@@ -7,7 +7,7 @@ var courseCollection = [
       "4cb295fe-e516-4a8b-4abd-94e5da43856c",
       ],
     "students": ["3d3ad3ad-5bce-a672-fddf-bd57ba0190bd",],
-    "assignments": ["HW1","HW2"],
+    "assignments": ["e3968d58-29ef-7784-1ac9-75eaf5fa8ad6","HW2_id"],
   },
   {
     "_id": "978a0f93-cff4-3d9d-9cff-ef36f202176a",
@@ -17,6 +17,10 @@ var courseCollection = [
       "4cb295fe-e516-4a8b-4abd-94e5da43856c",
       ],
     "students": ["3d3ad3ad-5bce-a672-fddf-bd57ba0190bd",],
-    "assignments": ["HW1","Quiz1","HW2"],
+    "assignments": ["HW1_id","Quiz1_id","HW2_id"],
   },
-]
+];
+
+function pubCourseCollection() {
+  return courseCollection;
+}
