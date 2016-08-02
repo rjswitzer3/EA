@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" manifest="cache.manifest">
-<script src="js/student/students.js"></script>
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="img/title_logo.png" type="image/x-icon">
@@ -106,6 +105,7 @@
 
          <script src="js/nav_cog.js"></script>
          <script src="js/student/students.js"></script>
+        <script src="js/teacher/teachers.js"></script>
          <script src="js/_nav.js"></script>
 
         <script type="text/javascript">
@@ -145,19 +145,31 @@
             //JavaScript login
               console.log("Username: " + userVar);
               console.log("Password: " + passVar);
-              var studentCollection = getStudentCollection();
+//              var studentCollection = getStudentCollection();
               console.log("htmlCollection: " + studentCollection);
-              for (var user in studentCollection) {
-                  console.log("Object: " + user);
-                  console.log("DB Username: " + studentCollection[user].username);
-                  console.log("DB Password: " + studentCollection[user].password);
-                  if ((userVar == user.username) && (passVar = user.password)) {
+              for (var index in studentCollection) {
+                  console.log("Object: " + index);
+                  console.log("DB Username: " + studentCollection[index].username);
+                  console.log("DB Password: " + studentCollection[index].password);
+                  if ((userVar == studentCollection[index].username) && (passVar = studentCollection[index].password)) {
                       location.replace(path+'student-home.html');
                   }
-                  alert("Invalid Username or Password.");
-                  break;
-              }
 
+//                  alert("Invalid Username or Password.");
+//                  break;
+              }
+              for (var index in teacherCollection) {
+                  console.log("Object: " + index);
+                  console.log("DB Username: " + studentCollection[index].username);
+                  console.log("DB Password: " + studentCollection[index].password);
+                  if ((userVar == studentCollection[index].username) && (passVar = studentCollection[index].password)) {
+                      location.replace(path+'student-home.html');
+                  }
+
+//                  alert("Invalid Username or Password.");
+//                  break;
+              }
+//              alert("Invalid Username or Password.");
 
 //            if(user == "student"){
 //              location.replace(path+'student-home.html');
