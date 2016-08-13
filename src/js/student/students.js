@@ -1,9 +1,9 @@
 var studentCollection = [
   {
     "_id": "3d3ad3ad-5bce-a672-fddf-bd57ba0190bd",
-    "username": "student",
     "firstname": "John",
     "lastname": "Doe",
+    "username": "student",
     "password": "none",
     "email": "jdoe66@gmail.com",
     "points": "243",
@@ -29,6 +29,8 @@ var studentCollection = [
         "students": ["3d3ad3ad-5bce-a672-fddf-bd57ba0190bd",],
         "assignments": ["HW1","Quiz1","HW2"],
       },
+      ],
+    "submissions": ["",
       ],
     "school": "Rochester Institute of Technology",
     "city": "Rochester",
