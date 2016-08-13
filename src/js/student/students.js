@@ -38,9 +38,19 @@ var studentCollection = [
     "zip": "14623",
     "phone": "",
   },
+  {
+    "username": "student1",
+    "firstname": "Jimmy",
+    "lastname": "Brown",
+    "password": "password123",
+    "email": "student1@gmail.com",
+    "points": "0",
+    "courses": ["Calculus II", "Calculus I", "Linear Algebra"]
+  },
+]
 
-];
-
-function pubStudentCollection() {
+function getStudentCollection() {
+  console.log("getStudentCollection: " + studentCollection);
   return studentCollection;
 }
+
