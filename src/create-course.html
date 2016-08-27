@@ -187,14 +187,48 @@
         </div>
     </div>
 
+    <div class="row">
+        <div id="divStoreEdit" class="col-lg-6">
+            <input id="StoreKey" name="StoreKey" type="hidden" value="66244d499503"/>
+            <div class="well">
+                <div class="row">
+                    <div class="col-lg-8">
+            <span>
+                <!-- <label for="Name_Name">Name</label> -->
+                <input class="form-control" data-val="true" data-val-required="The Name field is required."
+                       id="CourseName" name="CourseName" placeholder="Course Name" type="text" value="Enter Course Name"/>
+                <input class="form-control" data-val="true"
+                       data-val-required="The Course Id is required." id="CourseId" name="CourseId"
+                       placeholder="CourseId" type="text" value="Eneter Course Code"/>
+            </span>
+                    </div>
+                    <div class="col-lg-1 col-lg-offset-3">
+                        <button name="DeleteStore" type="submit" class="close" title="Delete" style="color: #000000">×
+                        </button>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-lg-12" style="height: 100px">
+            <span>
+                <textarea class="form-control" cols="20" id="Description" name="Description" placeholder="Description" rows="4">Enter Course Description.</textarea>
+            </span>
+                    </div>
+                </div>
+                <br/>
+                <a class="btn btn-primary" href=""><input id="btnAddStore" type="submit" class="btn btn-primary"
+                                                      value="Add Course"/></a>
+            </div>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-lg-6" style="height: 300px">
             <!--form action="_import_new_static.html" method="post"-->
             <input data-val="true" data-val-required="The Boolean field is required." id="HideHelp" name="HideHelp"
                    type="hidden" value="false"/>
-            <a class="btn btn-primary" href=""><input id="btnAddStore" type="submit" class="btn btn-primary"
-                                                      value="Add Course"/></a>
+            <!--a class="btn btn-primary" href=""><input id="btnAddStore" type="submit" class="btn btn-primary"
+                                                      value="Add Course"/></a-->
             <!--/form-->
         </div>
     </div>

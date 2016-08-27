@@ -36,7 +36,7 @@ var studentCollection = [
     "city": "Rochester",
     "state": "NY",
     "zip": "14623",
-    "phone": "",
+    "phone": "315",
   },
   {
     "username": "student1",
