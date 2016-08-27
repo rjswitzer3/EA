@@ -4482,7 +4482,8 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     height: 50px;
     padding: 15px 15px;
     font-size: 18px;
-    line-height: 20px
+    line-height: 20px;
+    /*background-image: url(img/EA_Logo.svg);*/
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
@@ -9243,7 +9244,7 @@ textarea.input-lg, select[multiple].input-lg {
 
 .btn-primary {
     color: #ffffff;
-    background-color: #008cba;
+    background-color: #0d8b9e;
     border-color: #0079a1
 }
 
