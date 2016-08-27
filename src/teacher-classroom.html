@@ -1,0 +1,156 @@
+<html lang="en" manifest="cache.manifest">
+  <head>
+      <meta charset="utf-8">
+      <title>Eager Academy | Classroom</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="img/title_logo.png" type="image/x-icon">
+      <link href="css/_layout.css" rel="stylesheet"/>
+  
+  </head>
+  
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/EA_Logo.jpg" alt="Agora"
+                                                               style="margin-top: -8px; max-height: 160%"/></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul id="topnavsection" class="nav navbar-nav">
+                    <li id="navImport"><a href="teacher-home.html">Home</a></li>
+                    <li id="navOrder"><a href="">Events</a></li>
+                    <!--
+                         TODO: Remove comments when contact page is done
+                         <li id="navOrder"><a href="/">Contact</a></li>
+                    -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" style="z-index: 10">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b class="caret"></b></a>
+                        <ul class="dropdown-menu" style="z-index: 10">
+                            <li class="main-nav-link"><a href="teacher-edit-info.html">Account</a></li>
+                            <li class="main-nav-link"><a href="create-course.html">Courses</a></li>
+    
+                            <li class="main-nav-link">
+                                <form action="/Account/LogOff" id="logoutForm" method="post"><input
+                                        name="__RequestVerificationToken" type="hidden"
+                                        value="8Z2kOh0R0gFDHCk6X4Al5dKGqpZcuBkKvWhvJWmH9p8VNojZ1TytuQ5IaldoRN309V4i8SCfYJAvnlukRyceFfv_tfCMX9oESuA4Zz8_Md0lrVkACgU_YDyYq8VRSlDWQgccVlabnpZnsYs7icd9dJFfQu5EQW7pD1sqranDisk1"/>
+                                    <a class="logout" href="login.html">Log off</a>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+    
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <legend>
+          <hgroup class="title">
+            <h1><i>CALCULUS I</i></h1>
+          </hgroup>
+          <p style="font-size: small">MATH-201</p>
+        </legend>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-7 well">
+          <!-- ASSIGNMENTS-->
+          <section id="loginForm">
+            <legend>
+              <hgroup class="title">
+                <h1><i>Assignments</i></h1>
+              </hgroup>
+              <p style="font-size: small">View and grade your assignments.</p>
+            </legend>
+              
+            <div class="row well">
+              <div class="col-sm-11">
+                <h4>HOMEWORK</h4>
+              </div>
+              <div class="col-sm-1">
+                <br><span class="glyphicon glyphicon-menu-hamburger"></span>
+              </div>
+            </div>
+            
+            <div class="row well">
+              <div class="col-sm-11">
+                <h4>QUIZES</h4>
+              </div>
+              <div class="col-sm-1">
+                <br><span class="glyphicon glyphicon-menu-hamburger"></span>
+              </div>
+              
+            </div>
+            
+            <div class="row well">
+              <div class="col-sm-11">
+                <h4>TESTS</h4>
+              </div>
+              <div class="col-sm-1">
+                <br><span class="glyphicon glyphicon-menu-hamburger"></span>
+              </div>
+              
+            </div>
+
+          </section>
+  
+        </div>
+        
+        <div class="col-sm-1">
+          <!--FORMATING -->
+        </div>
+        
+        <div class="col-sm-4 well">
+          <!-- CLASS LIST-->
+          <section id="loginForm">
+
+            <legend>
+              <hgroup class="title">
+                <h1><i>Class List</i></h1>
+              </hgroup>
+              <p style="font-size: small">Currently enrolled students</p><br>
+              <div class="row">
+                <div class="col-sm-10"><p style="font-size: small"><b>Student Name</b></p></div>
+                <div class="col-sm-2"><p style="font-size: small"><b>Grade</b></p></div>
+              </div>
+            </legend>
+
+            <div class="row well">
+              <div class="col-sm-11">Robert Smith</div>
+              <div class="col-sm-1">B+</div>
+            </div>
+            <div class="row well">
+              <div class="col-sm-11">John Doe</div>
+              <div class="col-sm-1">A-</div>
+            </div>
+            <div class="row well">
+              <div class="col-sm-11">Sarah Shaw</div>
+              <div class="col-sm-1">A</div>
+            </div>
+            <div class="row well">
+              <div class="col-sm-11">Joe Shmoe</div>
+              <div class="col-sm-1">C+</div>
+            </div>
+            <div class="row well">
+              <div class="col-sm-11">Brian Muler</div>
+              <div class="col-sm-1">B-</div>
+            </div>
+            
+          </section>
+        </div>
+        
+      </div>
+    </div>
+    
+  </body>
+
+</html>
