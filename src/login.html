@@ -44,7 +44,9 @@
 <div class="row">
     <!--div class="col-lg-7">
     </div-->
+
     <div class="col-lg-6">
+
     <section id="loginForm">
 <!--form action="import.html" class="form-horizontal" method="post"-->
   <input name="__RequestVerificationToken" type="hidden" value="1we_qTcObIB7KxfDyEeDhG9G1_BLcCjdDDpfPN4V_QWyTY8SfBVej91cdhsRpB2QpC9KgVxUTrX76mqCGkTX6h5ZhumPHoLdEZB74Qi_qTcMgwhJ8Oeec62LXuJn6LaQ0TIF0NgolwgH8fcevBfdNLE3g8VCWtgwbeBjdUThbP41" />
@@ -53,6 +55,7 @@
     </ul>
   </div>
   <div class="well">
+
     <legend>
       <hgroup class="title">
         <h1><i>Log in</i></h1>
@@ -90,8 +93,10 @@
             -->
       </div>
     </fieldset>
+
   </div>
   </section>
+
     </div>
 </div>
 
@@ -166,8 +171,8 @@
                   console.log("Object: " + index);
                   console.log("DB Username: " + studentCollection[index].username);
                   console.log("DB Password: " + studentCollection[index].password);
-                  if ((userVar == studentCollection[index].username) && (passVar = studentCollection[index].password)) {
-                      location.replace(path+'student-home.html');
+                  if ((userVar == teacherCollection[index].username) && (passVar = teacherCollection[index].password)) {
+                      location.replace(path+'teacher-home.html');
                   }
 
 //                  alert("Invalid Username or Password.");
