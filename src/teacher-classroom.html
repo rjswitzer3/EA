@@ -80,7 +80,7 @@
             </div>
             <div class="row">
               <div class="col-sm-1"></div>
-              <div id="hw-col" class="col-sm-11">
+              <div id="hw-col" class="col-sm-11" data-hw="false">
                 
               </div>
             </div>
@@ -172,16 +172,30 @@
         
         $("#hw").click(function(){
           var hws = $("#hw-col");
-          var course = db.courses[0];
           
-          for(var i = 0; i<course.assignments.hw.length; i++){
-            var ahw = course.assignments.hw[i];
-            var thw = $("<div class=\"row well\"></div>");
-            var hw = $("<div class=\"col-sm-11\"><p style=\"font-size: small\">"+ahw.name+"</p></div><div class=\"col-sm-1\"><a href=\"teacher-classroom-grades.html\"><span class=\"glyphicon glyphicon-menu-hamburger\"></span></a></div>");
+          if(hws.attr('data-hw') == "false"){
+            hws.attr({
+              "data-hw":"true",
+            });
+            var course = db.courses[0];
+          
+            for(var i = 0; i<course.assignments.hw.length; i++){
+              var ahw = course.assignments.hw[i];
+              var thw = $("<div class=\"row well\"></div>");
+              var hw = $("<div class=\"col-sm-11\"><p style=\"font-size: small\">"+ahw.name+"</p></div><div class=\"col-sm-1\"><a href=\"teacher-classroom-grades.html\"><span class=\"glyphicon glyphicon-menu-hamburger\"></span></a></div>");
+              
+              thw.append(hw);
+              hws.append(thw);
+            }
             
-            thw.append(hw);
-            hws.append(thw)
+          }else{
+            hws.attr({
+              "data-hw":"false",
+            });
+            
+            hws.empty();
           }
+          
           
         });
           
