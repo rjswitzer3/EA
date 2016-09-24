@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/title_logo.png" type="image/x-icon">
+    <title>Eager Academy | Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/_layout.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/EA_Logo.png" alt="Agora"
+                                                           style="margin-top: -8px; max-height: 160%"/></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul id="topnavsection" class="nav navbar-nav">
+                <li id="navImport"><a href="student-home.html">Home</a></li>
+                <!--li id="schedule"><a href="import_store.html">Schedule</a></li-->
+                <li id="navOrder"><a href="student-store.html">Store</a></li>
+                <!--
+                     TODO:
+                     - Correct href
+                -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" style="z-index: 10">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b
+                            class="caret"></b></a>
+                    <ul class="dropdown-menu" style="z-index: 10">
+                        <li class="main-nav-link"><a href="student-edit-info.html">Account</a></li>
+                        <li class="main-nav-link"><a href="">Store</a></li>
+                        <!--
+                         TODO:
+                        - Correct href
+                        -->
+                        <li class="main-nav-link">
+                            <form action="/Account/LogOff" id="logoutForm" method="post"><input
+                                    name="__RequestVerificationToken" type="hidden"
+                                    value="OnDwrWx9JXeaTqdbR6lFXfKalgk1TqqB01iCQsAxR_rqWDfY297bQiXrTIxx-X_XkG0w-mKgXd31TRwU9UwS30yFxrRUdYqJPSKmKnQtTucW1_aJZ_xoPj2w59EPwzXC2hDD2mRGdMHgP2JF8mVrXGx1lHbV4yJGLT0iASetSxg1"/>
+                                <a class="logout" href="login.html">Log off</a>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+</body>
+</html>

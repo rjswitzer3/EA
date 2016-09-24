@@ -26,7 +26,7 @@
         <div class="navbar-collapse collapse">
             <ul id="topnavsection" class="nav navbar-nav">
                 <li id="navImport"><a href="teacher-home.html">Home</a></li>
-                <li id="schedule"><a href="">Events</a></li>
+                <!--<li id="schedule"><a href="">Events</a></li>-->
                 <!--
                      TODO:
                      - Correct href
@@ -70,55 +70,55 @@
         <!--</div>-->
     </div>
     <div class="row">
-        <div class="col-sm-4">
-            <form action="student-home.html" enctype="multipart/form-data" id="uploadForm" method="post">
-                <div class="well">
-                    <!--form action="#"-->
-                    <fieldset>
-                        <legend>
-                            <hgroup class="title">
-                                <h3>Assignment Upload</h3>
-                            </hgroup>
-                        </legend>
-                        <div class="form-group">
+        <!--<div class="col-sm-4">-->
+        <!--<form action="student-home.html" enctype="multipart/form-data" id="uploadForm" method="post">-->
+        <!--<div class="well">-->
+        <!--&lt;!&ndash;form action="#"&ndash;&gt;-->
+        <!--<fieldset>-->
+        <!--<legend>-->
+        <!--<hgroup class="title">-->
+        <!--<h3>Assignment Upload</h3>-->
+        <!--</hgroup>-->
+        <!--</legend>-->
+        <!--<div class="form-group">-->
 
-                            <label for="ddlStores">Courses:</label>
-                            <a class="alert-link" href="create-course.html" style="float:right">Create Course</a>
-                            <select class="form-control" id="ddlStores" name="StoreKey">
-                                <option value="">Select a Course</option>
-                                <option value="66244d499503">Calculus I</option>
-                                <option value="af3ed0ad8cf6">Calculus II</option>
-                                <option value="055a4ef1ca4e">Linear Algebra</option>
-                            </select>
-                        </div>
+        <!--<label for="ddlStores">Courses:</label>-->
+        <!--<a class="alert-link" href="create-course.html" style="float:right">Create Course</a>-->
+        <!--<select class="form-control" id="ddlStores" name="StoreKey">-->
+        <!--<option value="">Select a Course</option>-->
+        <!--<option value="66244d499503">Calculus I</option>-->
+        <!--<option value="af3ed0ad8cf6">Calculus II</option>-->
+        <!--<option value="055a4ef1ca4e">Linear Algebra</option>-->
+        <!--</select>-->
+        <!--</div>-->
 
-                        <div id="divVendors" class="form-group">
-                            <label for="ddlVendors">Assignment:</label>
-                            <a class="alert-link" href="create-assignment.html" style="float:right">Create
-                                Assignment</a>
-                            <!--a href="#" class = "alert-link" id="addNewVendor" data-mode="import" style="float:right">Submit a New Vendor</a-->
-                            <input class="form-control" id="tbVendorName" placeholder="Vendor Name" type="hidden"/>
-                            <select class="form-control" id="ddlVendors" name="VendorKey">
-                                <option>Select a Assignment</option>
-                            </select>
-                        </div>
+        <!--<div id="divVendors" class="form-group">-->
+        <!--<label for="ddlVendors">Assignment:</label>-->
+        <!--<a class="alert-link" href="create-assignment.html" style="float:right">Create-->
+        <!--Assignment</a>-->
+        <!--&lt;!&ndash;a href="#" class = "alert-link" id="addNewVendor" data-mode="import" style="float:right">Submit a New Vendor</a&ndash;&gt;-->
+        <!--<input class="form-control" id="tbVendorName" placeholder="Vendor Name" type="hidden"/>-->
+        <!--<select class="form-control" id="ddlVendors" name="VendorKey">-->
+        <!--<option>Select a Assignment</option>-->
+        <!--</select>-->
+        <!--</div>-->
 
-                        <div id="divFile" class="form-group">
-                            <label id="lblSelectFile" for="ifVendorFile">Select Assignment File: </label>
-                            <input type="file" id="VendorFile" name="VendorFile"/>
-                        </div>
-                        <div id="divActions" class="form-actions">
-                            <input class="btn btn-primary" type="submit" value="Upload" id="btnSubmit"/>
-                        </div>
+        <!--<div id="divFile" class="form-group">-->
+        <!--<label id="lblSelectFile" for="ifVendorFile">Select Assignment File: </label>-->
+        <!--<input type="file" id="VendorFile" name="VendorFile"/>-->
+        <!--</div>-->
+        <!--<div id="divActions" class="form-actions">-->
+        <!--<input class="btn btn-primary" type="submit" value="Upload" id="btnSubmit"/>-->
+        <!--</div>-->
 
-                        <div id="divRequest" class="form-group">
-                            <input class="btn btn-primary" value="Submit" id="btnRequest"/>
-                        </div>
-                    </fieldset>
-                    <!--/form-->
-                </div>
-            </form>
-        </div>
+        <!--<div id="divRequest" class="form-group">-->
+        <!--<input class="btn btn-primary" value="Submit" id="btnRequest"/>-->
+        <!--</div>-->
+        <!--</fieldset>-->
+        <!--&lt;!&ndash;/form&ndash;&gt;-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
         <div class="col-sm-8">
             <h4>Courses Tought:</h4>
             <table id="uploadHistory" class="table table-striped table-hover">
