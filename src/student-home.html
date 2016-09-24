@@ -79,6 +79,9 @@
 
     <div class="row text-header">
         <div class="col-sm-4">
+            <div class="studentName" id="studentName">
+
+            </div>
             <h1>Tommy Chen -- Student Home</h1>
             <section class="stdPoints">
                 <h4>Total Points: 234</h4>
@@ -872,7 +875,11 @@
     $(document).ready(function () {
         var controllerName = 'Vendor';
         var actionName = 'Import';
+
         updateNavBars(controllerName, actionName);
+        var str_db = localStorage.getItem('db');
+        var db = JSON.parse(str_db);
+        console.log(db);
 
         $('.validation-summary-errors').addClass('alert alert-dismissable alert-danger');
         if (!$(".validation-summary-errors").has("button").length) {
@@ -880,6 +887,7 @@
         }
     });
 
+    $("#studentName").
     $("form").each(function () {
         var $this = $(this);
         $this.submit(function () {
