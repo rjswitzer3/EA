@@ -123,68 +123,13 @@
                 <table id="uploadHistory" class="table table-striped table-hover">
                     <thead>
                     <tr>
-                        <th>REMOVE PLS</th>
                         <th>Type</th>
                         <th>Name</th>
                         <th>Grade</th>
                         <th>Date</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            Calculus I
-                        </td>
-                        <td>
-                            HW 1 - Integrals
-                        </td>
-                        <td>
-                            hw1.pdf
-                        </td>
-                        <td>
-                            <input id="item_Message" name="item.Message" type="hidden" value=""/>
-                            88
-                        </td>
-                        <td>
-                            7/03/2016
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Linear Algebra
-                        </td>
-                        <td>
-                            Quiz 1 - Matricies
-                        </td>
-                        <td>
-                            q1.docx
-                        </td>
-                        <td>
-                            <input id="item_Message" name="item.Message" type="hidden" value=""/>
-                            77
-                        </td>
-                        <td>
-                            7/21/2016
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Linear Algebra
-                        </td>
-                        <td>
-                            HW 1 - Review
-                        </td>
-                        <td>
-                            hw1.pdf
-                        </td>
-                        <td>
-                            <input id="item_Message" name="item.Message" type="hidden" value=""/>
-                            69
-                        </td>
-                        <td>
-                            7/15/2016
-                        </td>
-                    </tr>
+                    <tbody id="assignmentList">
 
                     </tbody>
                 </table>
@@ -230,7 +175,7 @@
 
         $("#studentName").html(db.student.firstname + " " + db.student.lastname + " -- Student HomePage")
 
-        var table = $("#courseSchedule");
+        var courseTable = $("#courseSchedule");
         for(var i = 0; i < db.courses.length; i++){
             var trow = $("<tr class='course' id='" + "course" + i + "'></tr>");
 
@@ -249,9 +194,39 @@
             trow.append(tgrade);
             trow.append(tlast);
             console.log(db.courses[i].assignments.hw[db.courses[i].assignments.hw.length-2].grade);
-            table.append(trow);
+            courseTable.append(trow);
 
         }
+
+        $("table tr").click(function () {
+            console.log("A Course was clicked");
+            var selected = $(this).hasClass("highlight");
+            $("table tr").removeClass("highlight");
+            if (!selected)
+                $(this).addClass("highlight");
+
+//            var selected = $(this).closest('tr').index;
+
+            console.log(this.rowIndex);
+            var rowIndex = this.rowIndex;
+            var assignmentTable = $("#assignmentList");
+
+            console.log(db.courses[rowIndex].assignments.);
+            for (var i = 0; i < db.courses[rowIndex].assignments.length; i++) {
+                console.log("Making AssignmentList");
+                var trow = $("<tr class='assignmentItem' id='" + "assignmentItem" + i + "'></tr>");
+                for (var j = 0; j < db.courses[rowIndex].assignments[i].length; j++) {
+                    //Columns
+                    var ttype = $("<td>" + db.courses[i].assignments[j] + "</td>");
+                    console.log(db.courses[i].assignments[j]);
+                    var tteacher = $("<td>" + db.courses[i].teacher + "</td>");
+                    var ttime = $("<td>" + db.courses[i].time + "</td>");
+                    var tgrade = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 2].grade + "</td>");
+                    var tlast = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 2].date + "</td>");
+                }
+            }
+        });
+
 
     });
 
@@ -268,13 +243,6 @@
                 return false;
             }
         });
-    });
-
-    $("#course tr").click(function () {
-        var selected = $(this).hasClass("highlight");
-        $("#course tr").removeClass("highlight");
-        if (!selected)
-            $(this).addClass("highlight");
     });
 
 
