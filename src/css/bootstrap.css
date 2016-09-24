@@ -6564,3 +6564,6 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.highlight {
+  background-color: red;
+}
