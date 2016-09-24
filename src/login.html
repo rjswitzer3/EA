@@ -137,9 +137,8 @@
         var actionName = 'Login';
         updateNavBars(controllerName, actionName);
         
-        var str_db = localStorage.getItem('db');
-        var db = JSON.parse(str_db);
-        alert(db.student.firstname);
+        var db = JSON.parse(localStorage.getItem('db'));
+        //alert(db.student.firstname);
 
 
         $('.validation-summary-errors').addClass('alert alert-dismissable alert-danger');
