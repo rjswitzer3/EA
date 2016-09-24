@@ -38,7 +38,7 @@
                 <div class="col-sm-4 col-sm-offset-4 text-center">
 					<h1 class="logo">Eager Academy</h1>
 					<p class="intro">Incentivized education</p>
-					<a href="#more" class="btn btn-lg btn-primary ">Learn More</a>
+					<a href="#more" class="btn btn-lg btn-primary " id="learn-more">Learn More</a>
 				</div>
 			</div>
 		</div>
@@ -132,6 +132,143 @@
         }
       });
     });
+    
+    $(document).ready(function () {
+      //var db = JSON.parse(ea_db);
+      var db = {
+      "student" : {
+        "firstname": "John",
+        "lastname": "Doe",
+        "username": "student",
+        "password": "none",
+        "email": "jdoe66@gmail.com",
+        "points": "203",
+        "school": "Rochester Institute of Technology",
+        "city": "Rochester",
+        "state": "NY",
+        "zip": "14623",
+      },
+      "teacher" : {
+        "username": "teacher",
+        "firstname": "Alexis",
+        "lastname": "Rack",
+        "formalname": "Mrs. Rack",
+        "password": "password123",
+        "email": "lexirack100@gmail.com",
+        "phone": "",
+        "school": "Rochester Institute of Technology",
+        "city": "Rochester",
+        "state": "NY",
+        "zip": "14623",
+      },
+    
+    //One-to-one relation between teacher and student
+    //--Assignments pertain to single student
+      "courses" : [
+        {
+          "coursename": "Calculus I",
+          "courseId": "MATH-201",
+          "assignments":{
+            "hw": [
+              {
+                "name":"HW 1 - Derivatives",
+                "grade":"90",
+                "points":"33",
+                "date":"8/30/16",
+              },
+              {
+                "name":"HW 2 - Limits",
+                "grade":"86",
+                "points":"28",
+                "date":"9/6/16",
+              },
+              {
+                "name":"HW 3 - Integrals",
+                "grade":"",
+                "points":"0",    //Sum these points
+                "date":"9/21/16",
+              },
+              
+              ],
+            "quiz": [
+              {
+                "name":"Quiz 1",
+                "grade":"80",
+                "points":"0",
+                "date":"9/16/16",
+              },
+              {
+                "name":"Quiz 2",
+                "grade":"-",
+                "points":"0",
+                "date":"",
+              },
+              
+              ],
+            "test":[
+              {
+                "name":"Midterm Exam",
+                "grade":"-",
+                "points":"0",
+                "date":"",
+              },
+              {
+                "name":"Final Exam",
+                "grade":"-",
+                "points":"0",
+                "date":"",
+              },
+              ],
+          },
+        },
+        {
+          "coursename": "Linear Algebra",
+          "courseId": "MATH-201",
+          "assignments":{
+            "hw": [
+              {
+                "name":"HW 1 - Review",
+                "grade":"",
+                "points":"",
+              },
+              
+              ],
+            "quiz": [
+              {
+                "name":"Quiz 1",
+                "grade":"",
+                "points":"",
+              },
+              
+              ],
+            "test":[
+             {
+                "name":"Midterm Exam",
+                "grade":"",
+                "points":"",
+                "date":"",
+              },
+              {
+                "name":"Final Exam",
+                "grade":"",
+                "points":"",
+                "date":"",
+              },
+              
+              ],
+            },
+          },
+        ],
+      };
+      
+      $("#learn-more").click(function(){
+        //alert(db.student.firstname);
+        localStorage.setItem('db', JSON.stringify(db));
+      });
+      
+    });
+    
+    
     </script>
 
   </body>
