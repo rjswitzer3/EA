@@ -125,7 +125,7 @@ $(document).ready( function() {
   $("#btnSubmit").attr("disabled", "disabled");
   $("#btnRequest").attr("disabled", "disabled");
   $("#divRequest").hide();
-  setup();
+  //setup();
   
   // On store selection
   $(document).on('change', '#ddlStores', function(){
