@@ -25,14 +25,11 @@
 
         <div class="navbar-collapse collapse">
             <ul id="topnavsection" class="nav navbar-nav">
-                <li id="navImport"><a href="teacher-home.html">Home</a></li>
-                <!--<li id="schedule"><a href="">Events</a></li>-->
-                <!--
-                     TODO:
-                     - Correct href
-                -->
+                
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li id="navImport"><a href="teacher-home.html"><span class="glyphicon glyphicon-home"/></a>
+                    </li>
                 <li class="dropdown" style="z-index: 10">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b
                             class="caret"></b></a>
@@ -124,7 +121,7 @@
         
         var taught = $("#courses-taught");
         for(var i = 0; i<db.courses.length; i++){
-          var trow = $("<tr onclick="+"document.location = 'teacher-classroom.html'"+"></tr>");
+          var trow = $("<tr onclick= \"document.location = 'teacher-classroom.html'\"></tr>");
           
           //Columns
           var tcourse = $("<td>"+db.courses[i].coursename+"</td>");
@@ -160,11 +157,6 @@
 
 </script>
 
-
-<script type="text/javascript">
-    /*    All Javascript script that was here -> js/vendor/_import.js
-     */
-</script>
 
 
 </body>
