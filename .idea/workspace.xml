@@ -4,6 +4,7 @@
     <list default="true" id="5f355690-cb46-4566-bf74-6bb2f352b823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/student-home.html" afterPath="$PROJECT_DIR$/src/student-home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/student-store.html" afterPath="$PROJECT_DIR$/src/student-store.html" />
     </list>
     <ignored path="Presentation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,31 +29,34 @@
     <splitter split-orientation="horizontal" split-proportion="0.46921074">
       <split-first>
         <leaf>
-          <file leaf-file-name="student-store.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="student-store.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/student-store.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-981">
-                  <caret line="189" column="33" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
+                <state relative-caret-position="294">
+                  <caret line="56" column="89" selection-start-line="56" selection-start-column="89" selection-end-line="56" selection-end-column="89" />
                   <folding>
+                    <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#4714#4721#0" expanded="true" />
+                    <element signature="e#4896#4903#0" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#6220#6227#0" expanded="true" />
+                    <element signature="e#6402#6409#0" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#7738#7745#0" expanded="true" />
+                    <element signature="e#7920#7927#0" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#7;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#9252#9259#0" expanded="true" />
+                    <element signature="e#9434#9441#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="student-home.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="student-home.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/student-home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-                  <folding />
+                <state relative-caret-position="210">
+                  <caret line="52" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+                  <folding>
+                    <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -64,7 +68,7 @@
           <file leaf-file-name="teacher-classroom-hw.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/teacher-classroom-hw.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
+                <state relative-caret-position="150">
                   <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -169,11 +173,11 @@
         <option value="$PROJECT_DIR$/src/css/_layout.css" />
         <option value="$PROJECT_DIR$/src/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/src/teacher-home.html" />
-        <option value="$PROJECT_DIR$/src/student-store.html" />
         <option value="$PROJECT_DIR$/src/teacher-classroom.html" />
         <option value="$PROJECT_DIR$/src/teacher-classroom-hw.html" />
         <option value="$PROJECT_DIR$/src/teacher-classroom-grades.html" />
         <option value="$PROJECT_DIR$/src/student-home.html" />
+        <option value="$PROJECT_DIR$/src/student-store.html" />
       </list>
     </option>
   </component>
@@ -270,6 +274,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Presentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Presentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parrots" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -507,7 +533,7 @@
       <workItem from="1474733652332" duration="4022000" />
       <workItem from="1474742279297" duration="9488000" />
       <workItem from="1474755806673" duration="207000" />
-      <workItem from="1474759410936" duration="18664000" />
+      <workItem from="1474759410936" duration="19364000" />
     </task>
     <task id="LOCAL-00001" summary="Added Teacher Login Functionality">
       <created>1472320381904</created>
@@ -621,11 +647,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474840820887</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Adding parrots">
+      <created>1474845078613</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1474845078613</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64219000" />
+    <option name="totallyTimeSpent" value="64919000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -685,7 +718,8 @@
     <MESSAGE value="Added Modal Popup Student Store" />
     <MESSAGE value="Saving is not working yet" />
     <MESSAGE value="Saving still not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving still not working" />
+    <MESSAGE value="Adding parrots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding parrots" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -724,7 +758,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -776,7 +812,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,7 +1167,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teacher-classroom-hw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="150">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1160,28 +1198,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/student-store.html">
+    <entry file="file://$PROJECT_DIR$/src/student-home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-981">
-          <caret line="189" column="33" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
+        <state relative-caret-position="210">
+          <caret line="52" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4714#4721#0" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6220#6227#0" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7738#7745#0" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#7;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9252#9259#0" expanded="true" />
+            <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/student-home.html">
+    <entry file="file://$PROJECT_DIR$/src/student-store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="294">
+          <caret line="56" column="89" selection-start-line="56" selection-start-column="89" selection-end-line="56" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4896#4903#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#6402#6409#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7920#7927#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#7;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9434#9441#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
