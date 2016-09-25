@@ -1,251 +1,264 @@
 <html lang="en" manifest="cache.manifest">
-  <head>
-      <meta charset="utf-8">
-      <title>Eager Academy | Classroom</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" href="img/title_logo.png" type="image/x-icon">
-      <link href="css/_layout.css" rel="stylesheet"/>
-  
-  </head>
-  
-  <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-              <a class="navbar-brand" href="index.html"><img src="img/EA_Logo.png" alt="Agora"
-                                                             style="margin-top: -8px; max-height: 160%"/></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul id="topnavsection" class="nav navbar-nav">
-                    <li id="navImport"><a href="teacher-home.html">Home</a></li>
-                    <li id="navOrder"><a href="">Events</a></li>
-                    <!--
-                         TODO: Remove comments when contact page is done
-                         <li id="navOrder"><a href="/">Contact</a></li>
-                    -->
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown" style="z-index: 10">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b class="caret"></b></a>
-                        <ul class="dropdown-menu" style="z-index: 10">
-                            <li class="main-nav-link"><a href="teacher-edit-info.html">Account</a></li>
-                            <li class="main-nav-link"><a href="create-course.html">Courses</a></li>
-    
-                            <li class="main-nav-link">
-                                <form action="/Account/LogOff" id="logoutForm" method="post"><input
-                                        name="__RequestVerificationToken" type="hidden"
-                                        value="8Z2kOh0R0gFDHCk6X4Al5dKGqpZcuBkKvWhvJWmH9p8VNojZ1TytuQ5IaldoRN309V4i8SCfYJAvnlukRyceFfv_tfCMX9oESuA4Zz8_Md0lrVkACgU_YDyYq8VRSlDWQgccVlabnpZnsYs7icd9dJFfQu5EQW7pD1sqranDisk1"/>
-                                    <a class="logout" href="login.html">Log off</a>
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-    
-            </div><!--/.nav-collapse -->
+<head>
+    <meta charset="utf-8">
+    <title>Eager Academy | Classroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/title_logo.png" type="image/x-icon">
+    <link href="css/_layout.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/EA_Logo.png" alt="Agora"
+                                                           style="margin-top: -8px; max-height: 160%"/></a>
         </div>
+        <div class="navbar-collapse collapse">
+            <ul id="topnavsection" class="nav navbar-nav">
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="navImport"><a href="teacher-home.html"><span class="glyphicon glyphicon-home"/></a>
+                </li>
+                <li class="dropdown" style="z-index: 10">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b
+                            class="caret"></b></a>
+                    <ul class="dropdown-menu" style="z-index: 10">
+                        <li class="main-nav-link"><a href="teacher-edit-info.html">Account</a></li>
+                        <li class="main-nav-link"><a href="teacher-home.html">Courses</a></li>
+                        <!--
+                         TODO:
+                        - Correct href
+                        -->
+                        <li class="main-nav-link">
+                            <form action="/Account/LogOff" id="logoutForm" method="post"><input
+                                    name="__RequestVerificationToken" type="hidden"
+                                    value="OnDwrWx9JXeaTqdbR6lFXfKalgk1TqqB01iCQsAxR_rqWDfY297bQiXrTIxx-X_XkG0w-mKgXd31TRwU9UwS30yFxrRUdYqJPSKmKnQtTucW1_aJZ_xoPj2w59EPwzXC2hDD2mRGdMHgP2JF8mVrXGx1lHbV4yJGLT0iASetSxg1"/>
+                                <a class="logout" href="login.html">Log off</a>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
     </div>
-    
-    <div class="container">
-      <div class="row">
+</div>
+
+<div class="container">
+    <div class="row">
         <legend>
-          <hgroup class="title">
-            <h1><i>CALCULUS I</i></h1>
-          </hgroup>
-          <p style="font-size: small">MATH-201</p>
+            <hgroup class="title">
+                <h1><i>CALCULUS I</i></h1>
+            </hgroup>
+            <p style="font-size: small">MATH-201</p>
         </legend>
-      </div>
-      
-      <div class="row">
-        <div class="col-sm-7 well">
-          <!-- ASSIGNMENTS-->
-          <section id="loginForm">
-            <legend>
-              <hgroup class="title">
-                <h1><i>Assignments</i></h1>
-              </hgroup>
-              <p style="font-size: small">View and grade your assignments.</p>
-            </legend>
-              
-            <div class="row well">
-              <div class="col-sm-11">
-                <h4>HOMEWORK</h4>
-              </div>
-              <div class="col-sm-1">
-                <br><a href="teacher-classroom.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-              </div>
-            </div>
-            <!-- Homeworks-->
-                <div class="row">
-                  <div class="col-sm-1"></div>
-                  <div class="col-sm-11">
-                    <div class="row well">
-                      <div class="col-sm-11"><p style="font-size: small">Homework #1</p></div>
-                      <div class="col-sm-1">
-                        <a href="teacher-classroom-hw.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                      </div>
-                    
-                    <!-- ClassList / Grades -->
-                        <div class="row">
-                          <div class="col-sm-2"></div>
-                          <div class="col-sm-10">
-                            <div class="row well">
-                              <div class="col-sm-10"><p style="font-size: small">Robert Smith</p></div>
-                              <div class="col-sm-2">
-                                <input size="3" value="88" >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-2"></div>
-                          <div class="col-sm-10">
-                            <div class="row well">
-                              <div class="col-sm-10"><p style="font-size: small">John Doe</p></div>
-                              <div class="col-sm-2">
-                                <input size="3" value="90" >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-2"></div>
-                          <div class="col-sm-10">
-                            <div class="row well">
-                              <div class="col-sm-10"><p style="font-size: small">Sarah Shaw</p></div>
-                              <div class="col-sm-2">
-                                <input size="3" value="100" >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-2"></div>
-                          <div class="col-sm-10">
-                            <div class="row well">
-                              <div class="col-sm-10"><p style="font-size: small">Joe Shmoe</p></div>
-                              <div class="col-sm-2">
-                                <input size="3" value="80" >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-2"></div>
-                          <div class="col-sm-10">
-                            <div class="row well">
-                              <div class="col-sm-10"><p style="font-size: small">Brian Muler</p></div>
-                              <div class="col-sm-2">
-                                <input size="3" value="94" >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row well">
-                      <div class="col-sm-11"><p style="font-size: small">Homework #2</p></div>
-                      <div class="col-sm-1">
-                        <a href=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                      </div>
-                    </div>
-                    <div class="row well">
-                      <div class="col-sm-11"><p style="font-size: small">Homework #3</p></div>
-                      <div class="col-sm-1">
-                        <a href=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                      </div>
-                    </div>
-                    <div class="row well">
-                      <div class="col-sm-11"><p style="font-size: small">Homework #4</p></div>
-                      <div class="col-sm-1">
-                        <a href=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                      </div>
-                    </div>
-                    <div class="row well">
-                      <div class="col-sm-11"><p style="font-size: small">Homework #5</p></div>
-                      <div class="col-sm-1">
-                        <a href=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-            
-            <div class="row well">
-              <div class="col-sm-11">
-                <h4>QUIZES</h4>
-              </div>
-              <div class="col-sm-1">
-                <br><a href="teacher-classroom-grades.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-              </div>
-              
-            </div>
-            
-            <div class="row well">
-              <div class="col-sm-11">
-                <h4>TESTS</h4>
-              </div>
-              <div class="col-sm-1">
-                <br><a href="teacher-classroom-grades.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-              </div>
-              
-            </div>
-
-          </section>
-  
-        </div>
-        
-        <div class="col-sm-1">
-          <!--FORMATING -->
-        </div>
-        
-        <div class="col-sm-4 well">
-          <!-- CLASS LIST-->
-          <section id="loginForm">
-
-            <legend>
-              <hgroup class="title">
-                <h1><i>Class List</i></h1>
-              </hgroup>
-              <p style="font-size: small">Currently enrolled students</p><br>
-              <div class="row">
-                <div class="col-sm-10"><p style="font-size: small"><b>Student Name</b></p></div>
-                <div class="col-sm-2"><p style="font-size: small"><b>Grade</b></p></div>
-              </div>
-            </legend>
-
-            <div class="row well">
-              <div class="col-sm-11">Robert Smith</div>
-              <div class="col-sm-1">B+</div>
-            </div>
-            <div class="row well">
-              <div class="col-sm-11">John Doe</div>
-              <div class="col-sm-1">A-</div>
-            </div>
-            <div class="row well">
-              <div class="col-sm-11">Sarah Shaw</div>
-              <div class="col-sm-1">A</div>
-            </div>
-            <div class="row well">
-              <div class="col-sm-11">Joe Shmoe</div>
-              <div class="col-sm-1">C+</div>
-            </div>
-            <div class="row well">
-              <div class="col-sm-11">Brian Muler</div>
-              <div class="col-sm-1">B-</div>
-            </div>
-            
-          </section>
-        </div>
-        
-      </div>
     </div>
-    
-  </body>
+
+    <div class="row">
+        <div class="col-sm-7 well">
+            <!-- ASSIGNMENTS-->
+            <section id="loginForm">
+                <legend>
+                    <hgroup class="title">
+                        <h1><i>Assignments</i></h1>
+                    </hgroup>
+                    <p style="font-size: small">View and grade your assignments.</p>
+                </legend>
+
+                <div class="row well">
+                    <div class="col-sm-11">
+                        <h4>HOMEWORK</h4>
+                    </div>
+                    <div class="col-sm-1">
+                        <br><a href="teacher-classroom.html"><span
+                            class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    </div>
+                </div>
+                <!-- Homeworks-->
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-11">
+                        <div class="row well">
+                            <div class="col-sm-11"><p style="font-size: small">Homework #1</p></div>
+                            <div class="col-sm-1">
+                                <a href="teacher-classroom-hw.html"><span
+                                        class="glyphicon glyphicon-menu-hamburger"></span></a>
+                            </div>
+
+                            <!-- ClassList / Grades -->
+                            <div class="row">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-10">
+                                    <div class="row well">
+                                        <div class="col-sm-10"><p style="font-size: small">Robert Smith</p></div>
+                                        <div class="col-sm-2">
+                                            <input size="3" value="88">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-10">
+                                    <div class="row well">
+                                        <div class="col-sm-10"><p style="font-size: small">John Doe</p></div>
+                                        <div class="col-sm-2">
+                                            <input size="3" value="90">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-10">
+                                    <div class="row well">
+                                        <div class="col-sm-10"><p style="font-size: small">Sarah Shaw</p></div>
+                                        <div class="col-sm-2">
+                                            <input size="3" value="100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-10">
+                                    <div class="row well">
+                                        <div class="col-sm-10"><p style="font-size: small">Joe Shmoe</p></div>
+                                        <div class="col-sm-2">
+                                            <input size="3" value="80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-10">
+                                    <div class="row well">
+                                        <div class="col-sm-10"><p style="font-size: small">Brian Muler</p></div>
+                                        <div class="col-sm-2">
+                                            <input size="3" value="94">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row well">
+                            <div class="col-sm-11"><p style="font-size: small">Homework #2</p></div>
+                            <div class="col-sm-1">
+                                <a href=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                            </div>
+                        </div>
+                        <div class="row well">
+                            <div class="col-sm-11"><p style="font-size: small">Homework #3</p></div>
+                            <div class="col-sm-1">
+                                <a href=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                            </div>
+                        </div>
+                        <div class="row well">
+                            <div class="col-sm-11"><p style="font-size: small">Homework #4</p></div>
+                            <div class="col-sm-1">
+                                <a href=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                            </div>
+                        </div>
+                        <div class="row well">
+                            <div class="col-sm-11"><p style="font-size: small">Homework #5</p></div>
+                            <div class="col-sm-1">
+                                <a href=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row well">
+                    <div class="col-sm-11">
+                        <h4>QUIZES</h4>
+                    </div>
+                    <div class="col-sm-1">
+                        <br><a href="teacher-classroom-grades.html"><span
+                            class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    </div>
+
+                </div>
+
+                <div class="row well">
+                    <div class="col-sm-11">
+                        <h4>TESTS</h4>
+                    </div>
+                    <div class="col-sm-1">
+                        <br><a href="teacher-classroom-grades.html"><span
+                            class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class="col-sm-1">
+            <!--FORMATING -->
+        </div>
+
+        <div class="col-sm-4 well">
+            <!-- CLASS LIST-->
+            <section id="loginForm">
+
+                <legend>
+                    <hgroup class="title">
+                        <h1><i>Class List</i></h1>
+                    </hgroup>
+                    <p style="font-size: small">Currently enrolled students</p><br>
+                    <div class="row">
+                        <div class="col-sm-10"><p style="font-size: small"><b>Student Name</b></p></div>
+                        <div class="col-sm-2"><p style="font-size: small"><b>Grade</b></p></div>
+                    </div>
+                </legend>
+
+                <div class="row well">
+                    <div class="col-sm-11">Robert Smith</div>
+                    <div class="col-sm-1">B+</div>
+                </div>
+                <div class="row well">
+                    <div class="col-sm-11">John Doe</div>
+                    <div class="col-sm-1">A-</div>
+                </div>
+                <div class="row well">
+                    <div class="col-sm-11">Sarah Shaw</div>
+                    <div class="col-sm-1">A</div>
+                </div>
+                <div class="row well">
+                    <div class="col-sm-11">Joe Shmoe</div>
+                    <div class="col-sm-1">C+</div>
+                </div>
+                <div class="row well">
+                    <div class="col-sm-11">Brian Muler</div>
+                    <div class="col-sm-1">B-</div>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/nav_cog.js"></script>
+<script src="js/_nav.js"></script>
+<script src="js/_import.js"></script>
+<script type="text/javascript">
+
+</script>
+>
+
+</body>
 
 </html>
