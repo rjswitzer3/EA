@@ -97,6 +97,7 @@
                     <thead>
                     <tr>
                         <th>Course</th>
+                        <th>Course ID</th>
                         <th>Teacher</th>
                         <th>Times</th>
                         <th>Grade</th>
@@ -177,7 +178,8 @@
 
 
             //Columns
-            var tcourse = $("<td>" + db.courses[i].coursename + "</td>");
+            var tcourse = $("<td>" + db.courses[i].coursename.toUpperCase() + "</td>");
+            var tcourseId = $("<td>" + db.courses[i].courseId + "</td>");
             var tteacher = $("<td>" + db.courses[i].teacher + "</td>");
             var ttime = $("<td>" + db.courses[i].time + "</td>");
             var tgrade = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 2].grade + "</td>");
@@ -185,6 +187,7 @@
 
 
             trow.append(tcourse);
+            trow.append(tcourseId);
             trow.append(tteacher);
             trow.append(ttime);
             trow.append(tgrade);

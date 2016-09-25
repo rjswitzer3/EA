@@ -84,6 +84,9 @@
                 </div>
                 <!-- Homeworks-->
                 <div class="row">
+                    <div id="homeworkList">
+
+                    </div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-11">
                         <div class="row well">
@@ -98,9 +101,12 @@
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-10">
                                     <div class="row well">
-                                        <div class="col-sm-10"><p style="font-size: small">Robert Smith</p></div>
-                                        <div class="col-sm-2">
-                                            <input size="3" value="88">
+                                        <div class="col-sm-8">John Walkington</div>
+                                        <div class="col-sm-4">
+                                            <form id="hw1GradeForm">
+                                                <input id="hw1GradeInput" type="number" min="0" max="100"
+                                                       size="3"><input type="submit" value="SAVE">
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -109,9 +115,13 @@
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-10">
                                     <div class="row well">
-                                        <div class="col-sm-10"><p style="font-size: small">John Doe</p></div>
-                                        <div class="col-sm-2">
-                                            <input size="3" value="90">
+                                        <div class="col-sm-8">John Doe</div>
+                                        <div class="col-sm-4">
+                                            <form>
+                                                <input type="number" min="0" max="100" size="3"><input type="submit"
+                                                                                                       value="SAVE">
+                                            </form>
+
                                         </div>
                                     </div>
                                 </div>
@@ -211,41 +221,40 @@
 
         <div class="col-sm-4 well">
             <!-- CLASS LIST-->
-            <section id="loginForm">
 
-                <legend>
-                    <hgroup class="title">
-                        <h1><i>Class List</i></h1>
-                    </hgroup>
-                    <p style="font-size: small">Currently enrolled students</p><br>
-                    <div class="row">
-                        <div class="col-sm-10"><p style="font-size: small"><b>Student Name</b></p></div>
-                        <div class="col-sm-2"><p style="font-size: small"><b>Grade</b></p></div>
-                    </div>
-                </legend>
+            <legend>
+                <hgroup class="title">
+                    <h1><i>Class List</i></h1>
+                </hgroup>
+                <p style="font-size: small">Currently enrolled students</p><br>
+                <div class="row">
+                    <div class="col-sm-10"><p style="font-size: small"><b>Student Name</b></p></div>
+                    <div class="col-sm-2"><p style="font-size: small"><b>Grade</b></p></div>
+                </div>
+            </legend>
 
-                <div class="row well">
-                    <div class="col-sm-11">Robert Smith</div>
-                    <div class="col-sm-1">B+</div>
-                </div>
-                <div class="row well">
-                    <div class="col-sm-11">John Doe</div>
-                    <div class="col-sm-1">A-</div>
-                </div>
-                <div class="row well">
-                    <div class="col-sm-11">Sarah Shaw</div>
-                    <div class="col-sm-1">A</div>
-                </div>
-                <div class="row well">
-                    <div class="col-sm-11">Joe Shmoe</div>
-                    <div class="col-sm-1">C+</div>
-                </div>
-                <div class="row well">
-                    <div class="col-sm-11">Brian Muler</div>
-                    <div class="col-sm-1">B-</div>
-                </div>
+            <div class="row well">
+                <div class="col-sm-11">Robert Smith</div>
+                <div class="col-sm-1">B+</div>
+            </div>
+            <div class="row well">
+                <div class="col-sm-11">John Doe</div>
+                <div class="col-sm-1">A-</div>
+            </div>
+            <div class="row well">
+                <div class="col-sm-11">Sarah Shaw</div>
+                <div class="col-sm-1">A</div>
+            </div>
+            <div class="row well">
+                <div class="col-sm-11">Joe Shmoe</div>
+                <div class="col-sm-1">C+</div>
+            </div>
+            <div class="row well">
+                <div class="col-sm-11">Brian Muler</div>
+                <div class="col-sm-1">B-</div>
+            </div>
 
-            </section>
+
         </div>
 
     </div>
@@ -255,6 +264,38 @@
 <script src="js/_nav.js"></script>
 <script src="js/_import.js"></script>
 <script type="text/javascript">
+    $(document).ready(function () {
+        var controllerName = 'Vendor';
+        var actionName = 'Import';
+
+        updateNavBars(controllerName, actionName);
+        var str_db = localStorage.getItem('db');
+        var db = JSON.parse(str_db);
+        console.log(db);
+        console.log(db.courses[0].assignments.hw[0].grade);
+
+        $('.validation-summary-errors').addClass('alert alert-dismissable alert-danger');
+        if (!$(".validation-summary-errors").has("button").length) {
+            $('.validation-summary-errors').prepend('<button type="button" class="close" data-dismiss="alert">×</button>');
+        }
+
+        $("#homeworkList").html(
+
+        )
+        $("#hw1GradeInput").defaultValue = db.courses[0].assignments.hw[1].grade;
+
+        $("#hw1GradeForm").submit(function (event) {
+            console.log("Submit Started");
+            var hw1Value = $("#hw1GradeInput");
+            console.log(db.courses[0].assignments.hw[0]);
+            db.courses[0].assignments.hw[0].grade = hw1Value;
+            db.courses[0].assignments.hw[0].setItem("grade", JSON.stringify(hw1Value));
+            console.log("Submit Done: " + hw1Value);
+            console.log(db.courses[0].assignments.hw[0]);
+            event.preventDefault();
+        });
+    });
+
 
 </script>
 >
