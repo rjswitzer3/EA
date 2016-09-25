@@ -19,8 +19,8 @@
             background: #e9e9e9;
         }
 
-        .highlight {
-            background-color: red;
+        .table-striped tbody tr.highlight td {
+            background-color: #0d8b9e;
         }
 
     </style>
@@ -199,44 +199,30 @@
         }
 
         $("table tr").click(function () {
-            console.log("A Course was clicked");
             var selected = $(this).hasClass("highlight");
             $("table tr").removeClass("highlight");
             if (!selected)
                 $(this).addClass("highlight");
 
-//            var selected = $(this).closest('tr').index;
-
-            console.log(this.rowIndex);
             var rowIndex = this.rowIndex - 1;
             var assignmentTable = $("#assignmentList");
             assignmentTable.empty();
 
-            console.log(db.courses[rowIndex]);
-            console.log(db.courses[rowIndex].assignments);
             for (var i = 0; i < db.courses[rowIndex].assignments.hw.length; i++) {
                 console.log("Making AssignmentList");
                 var trow = $("<tr class='assignmentItem' id='" + "assignmentItem" + i + "'></tr>");
-//                for (var j = 0; j < db.courses[rowIndex].assignments.length; j++) {
                 //Columns
                 var ttype = $("<td>" + "HW" + "</td>");
-                console.log(db.courses[rowIndex].assignments.hw[i]);
                 var tname = $("<td>" + db.courses[rowIndex].assignments.hw[i].name + "</td>");
                 var tgrade = $("<td>" + db.courses[rowIndex].assignments.hw[i].grade + "</td>");
                 var tdate = $("<td>" + db.courses[rowIndex].assignments.hw[i].date + "</td>");
-//                console.log(db.courses[i].assignments.hw[i].name);
-//                    var tteacher = $("<td>" + db.courses[i].teacher + "</td>");
-//                    var ttime = $("<td>" + db.courses[i].time + "</td>");
-//                    var tgrade = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 2].grade + "</td>");
-//                    var tlast = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 2].date + "</td>");
-
+//
                 trow.append(ttype);
                 trow.append(tname);
                 trow.append(tgrade);
                 trow.append(tdate);
 
                 assignmentTable.append(trow);
-//                }
             }
         });
 
