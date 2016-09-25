@@ -6202,7 +6202,7 @@ button.close {
 
 .modal-footer {
     padding: 15px;
-    text-align: right;
+    text-align: left;
     border-top: 1px solid #e5e5e5
 }
 
@@ -12617,7 +12617,7 @@ button.close {
 .modal-footer {
     margin-top: 15px;
     padding: 19px 20px 20px;
-    text-align: right;
+    text-align: left;
     border-top: 1px solid #e5e5e5
 }
 

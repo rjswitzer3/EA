@@ -220,6 +220,38 @@
 
                 assignmentTable.append(trow);
             }
+            for (var i = 0; i < db.courses[rowIndex].assignments.quiz.length; i++) {
+                console.log("Making AssignmentList");
+                var trow = $("<tr class='assignmentItem' id='" + "assignmentItem" + i + "'></tr>");
+                //Columns
+                var ttype = $("<td>" + "QUIZ" + "</td>");
+                var tname = $("<td>" + db.courses[rowIndex].assignments.quiz[i].name + "</td>");
+                var tgrade = $("<td>" + db.courses[rowIndex].assignments.quiz[i].grade + "</td>");
+                var tdate = $("<td>" + db.courses[rowIndex].assignments.quiz[i].date + "</td>");
+//
+                trow.append(ttype);
+                trow.append(tname);
+                trow.append(tgrade);
+                trow.append(tdate);
+
+                assignmentTable.append(trow);
+            }
+            for (var i = 0; i < db.courses[rowIndex].assignments.test.length; i++) {
+                console.log("Making AssignmentList");
+                var trow = $("<tr class='assignmentItem' id='" + "assignmentItem" + i + "'></tr>");
+                //Columns
+                var ttype = $("<td>" + "TEST" + "</td>");
+                var tname = $("<td>" + db.courses[rowIndex].assignments.test[i].name + "</td>");
+                var tgrade = $("<td>" + db.courses[rowIndex].assignments.test[i].grade + "</td>");
+                var tdate = $("<td>" + db.courses[rowIndex].assignments.test[i].date + "</td>");
+//
+                trow.append(ttype);
+                trow.append(tname);
+                trow.append(tgrade);
+                trow.append(tdate);
+
+                assignmentTable.append(trow);
+            }
         });
 
 
