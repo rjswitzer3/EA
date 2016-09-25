@@ -104,8 +104,11 @@
                                         <div class="col-sm-8">John Walkington</div>
                                         <div class="col-sm-4">
                                             <form id="hw1GradeForm">
-                                                <input id="hw1GradeInput" type="number" min="0" max="100"
-                                                       size="3"><input type="submit" value="SAVE">
+                                                <!--<input id="hw1GradeInput" type="number" min="0" max="100"-->
+                                                <!--size="3" value="30">-->
+
+                                                <div id="hw1GradeInput"></div>
+                                                <!--<input type="submit" value="SAVE">-->
                                             </form>
                                         </div>
                                     </div>
@@ -259,6 +262,8 @@
 
     </div>
 </div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.0.3.min.js"><\/script>')</script>
 
 <script src="js/nav_cog.js"></script>
 <script src="js/_nav.js"></script>
@@ -282,16 +287,17 @@
         $("#homeworkList").html(
 
         )
-        $("#hw1GradeInput").defaultValue = db.courses[0].assignments.hw[1].grade;
+//        $("#hw1GradeInput").defaultValue = db.courses[0].assignments.hw[1].grade;
+
+        $("#hw1GradeInput").html("<input id='hw1GradeInput' type='number' min='0' max='100' size='3' value=" + db.courses[0].assignments.hw[0].grade + ">" + "<input type='submit' value='SAVE'>");
 
         $("#hw1GradeForm").submit(function (event) {
-            console.log("Submit Started");
-            var hw1Value = $("#hw1GradeInput");
-            console.log(db.courses[0].assignments.hw[0]);
+
+            var hw1Value = $("#hw1GradeInput").val();
+            console.log(hw1Value);
             db.courses[0].assignments.hw[0].grade = hw1Value;
-            db.courses[0].assignments.hw[0].setItem("grade", JSON.stringify(hw1Value));
-            console.log("Submit Done: " + hw1Value);
-            console.log(db.courses[0].assignments.hw[0]);
+            console.log(db.courses[0].assignments.hw[0].grade);
+            localStorage.setItem('db', JSON.stringify(db));
             event.preventDefault();
         });
     });
