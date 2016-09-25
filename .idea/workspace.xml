@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f355690-cb46-4566-bf74-6bb2f352b823" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/student-home.html" afterPath="$PROJECT_DIR$/src/student-home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/student-store.html" afterPath="$PROJECT_DIR$/src/student-store.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <ignored path="Presentation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,18 +31,18 @@
           <file leaf-file-name="student-store.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/student-store.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="56" column="89" selection-start-line="56" selection-start-column="89" selection-end-line="56" selection-end-column="89" />
+                <state relative-caret-position="-1828">
+                  <caret line="58" column="89" selection-start-line="58" selection-start-column="89" selection-end-line="58" selection-end-column="89" />
                   <folding>
                     <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#4896#4903#0" expanded="true" />
+                    <element signature="e#4942#4949#0" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#6402#6409#0" expanded="true" />
+                    <element signature="e#6448#6455#0" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#7920#7927#0" expanded="true" />
+                    <element signature="e#7966#7973#0" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#7;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#9434#9441#0" expanded="true" />
+                    <element signature="e#9480#9487#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -53,7 +52,7 @@
             <entry file="file://$PROJECT_DIR$/src/student-home.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="210">
-                  <caret line="52" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+                  <caret line="54" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
                   <folding>
                     <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -65,7 +64,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="teacher-classroom-hw.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="teacher-classroom-hw.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/teacher-classroom-hw.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="150">
@@ -90,55 +89,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3246">
-                  <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-                  <folding>
-                    <marker date="1474842291000" expanded="true" signature="5212:13982" ph="{...}" />
-                    <marker date="1474842291000" expanded="true" signature="5277:13776" ph="{...}" />
-                    <marker date="1474842291000" expanded="true" signature="5306:5761" ph="{&quot;firstname&quot;: &quot;John&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="5790:6297" ph="{&quot;username&quot;: &quot;teacher&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="6316:6423" ph="//..." />
-                    <marker date="1474842291000" expanded="true" signature="6451:13761" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="6473:8980" ph="{&quot;coursename&quot;: &quot;Calculus I&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="6713:8957" ph="{...}" />
-                    <marker date="1474842291000" expanded="true" signature="6749:7681" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="6783:7042" ph="{&quot;name&quot;: &quot;HW 1 - Derivatives&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="7076:7329" ph="{&quot;name&quot;: &quot;HW 2 - Limits&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="7363:7649" ph="{&quot;name&quot;: &quot;HW 3 - Intro to Integrals&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="7719:8305" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="7753:8000" ph="{&quot;name&quot;: &quot;Quiz 1&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="8034:8273" ph="{&quot;name&quot;: &quot;Quiz 2&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="8343:8930" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="8377:8622" ph="{&quot;name&quot;: &quot;Midterm Exam&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="8656:8899" ph="{&quot;name&quot;: &quot;Final Exam&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="9002:11515" ph="{&quot;coursename&quot;: &quot;Calculus II&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="9242:11492" ph="{...}" />
-                    <marker date="1474842291000" expanded="true" signature="9278:10216" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="9312:9579" ph="{&quot;name&quot;: &quot;HW 1 - Unbounded Integrals&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="9613:9866" ph="{&quot;name&quot;: &quot;HW 2 - Series&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="9900:10184" ph="{&quot;name&quot;: &quot;HW 3 - Double Integrals&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="10254:10840" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="10288:10535" ph="{&quot;name&quot;: &quot;Quiz 1&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="10569:10808" ph="{&quot;name&quot;: &quot;Quiz 2&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="10878:11465" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="10912:11157" ph="{&quot;name&quot;: &quot;Midterm Exam&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="11191:11434" ph="{&quot;name&quot;: &quot;Final Exam&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="11537:13742" ph="{&quot;coursename&quot;: &quot;Linear Algebra&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="11781:13719" ph="{...}" />
-                    <marker date="1474842291000" expanded="true" signature="11817:12723" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="11851:12106" ph="{&quot;name&quot;: &quot;HW 1 - Review&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="12140:12396" ph="{&quot;name&quot;: &quot;HW 2 - Matrices&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="12430:12691" ph="{&quot;name&quot;: &quot;HW 3 - First Order Equations&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="12761:13066" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="12795:13034" ph="{&quot;name&quot;: &quot;Quiz 1&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="13104:13692" ph="[...]" />
-                    <marker date="1474842291000" expanded="true" signature="13138:13383" ph="{&quot;name&quot;: &quot;Midterm Exam&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="13417:13660" ph="{&quot;name&quot;: &quot;Final Exam&quot;...}" />
-                    <marker date="1474842291000" expanded="true" signature="13826:13969" ph="{...}" />
-                  </folding>
+                <state relative-caret-position="287">
+                  <caret line="86" column="64" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -168,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/teacher-edit-info.html" />
         <option value="$PROJECT_DIR$/src/js/_import.js" />
         <option value="$PROJECT_DIR$/src/css/main.css" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/css/_layout.css" />
         <option value="$PROJECT_DIR$/src/css/bootstrap.min.css" />
@@ -178,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/teacher-classroom-grades.html" />
         <option value="$PROJECT_DIR$/src/student-home.html" />
         <option value="$PROJECT_DIR$/src/student-store.html" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -533,7 +489,7 @@
       <workItem from="1474733652332" duration="4022000" />
       <workItem from="1474742279297" duration="9488000" />
       <workItem from="1474755806673" duration="207000" />
-      <workItem from="1474759410936" duration="19364000" />
+      <workItem from="1474759410936" duration="19613000" />
     </task>
     <task id="LOCAL-00001" summary="Added Teacher Login Functionality">
       <created>1472320381904</created>
@@ -654,11 +610,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474845078613</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added Party Parrot Points">
+      <created>1474845791212</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1474845791212</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64919000" />
+    <option name="totallyTimeSpent" value="65168000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -719,7 +682,8 @@
     <MESSAGE value="Saving is not working yet" />
     <MESSAGE value="Saving still not working" />
     <MESSAGE value="Adding parrots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding parrots" />
+    <MESSAGE value="Added Party Parrot Points" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Party Parrot Points" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1103,57 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3246">
-          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding>
-            <marker date="1474842291000" expanded="true" signature="5212:13982" ph="{...}" />
-            <marker date="1474842291000" expanded="true" signature="5277:13776" ph="{...}" />
-            <marker date="1474842291000" expanded="true" signature="5306:5761" ph="{&quot;firstname&quot;: &quot;John&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="5790:6297" ph="{&quot;username&quot;: &quot;teacher&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="6316:6423" ph="//..." />
-            <marker date="1474842291000" expanded="true" signature="6451:13761" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="6473:8980" ph="{&quot;coursename&quot;: &quot;Calculus I&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="6713:8957" ph="{...}" />
-            <marker date="1474842291000" expanded="true" signature="6749:7681" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="6783:7042" ph="{&quot;name&quot;: &quot;HW 1 - Derivatives&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="7076:7329" ph="{&quot;name&quot;: &quot;HW 2 - Limits&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="7363:7649" ph="{&quot;name&quot;: &quot;HW 3 - Intro to Integrals&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="7719:8305" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="7753:8000" ph="{&quot;name&quot;: &quot;Quiz 1&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="8034:8273" ph="{&quot;name&quot;: &quot;Quiz 2&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="8343:8930" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="8377:8622" ph="{&quot;name&quot;: &quot;Midterm Exam&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="8656:8899" ph="{&quot;name&quot;: &quot;Final Exam&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="9002:11515" ph="{&quot;coursename&quot;: &quot;Calculus II&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="9242:11492" ph="{...}" />
-            <marker date="1474842291000" expanded="true" signature="9278:10216" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="9312:9579" ph="{&quot;name&quot;: &quot;HW 1 - Unbounded Integrals&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="9613:9866" ph="{&quot;name&quot;: &quot;HW 2 - Series&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="9900:10184" ph="{&quot;name&quot;: &quot;HW 3 - Double Integrals&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="10254:10840" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="10288:10535" ph="{&quot;name&quot;: &quot;Quiz 1&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="10569:10808" ph="{&quot;name&quot;: &quot;Quiz 2&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="10878:11465" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="10912:11157" ph="{&quot;name&quot;: &quot;Midterm Exam&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="11191:11434" ph="{&quot;name&quot;: &quot;Final Exam&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="11537:13742" ph="{&quot;coursename&quot;: &quot;Linear Algebra&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="11781:13719" ph="{...}" />
-            <marker date="1474842291000" expanded="true" signature="11817:12723" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="11851:12106" ph="{&quot;name&quot;: &quot;HW 1 - Review&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="12140:12396" ph="{&quot;name&quot;: &quot;HW 2 - Matrices&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="12430:12691" ph="{&quot;name&quot;: &quot;HW 3 - First Order Equations&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="12761:13066" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="12795:13034" ph="{&quot;name&quot;: &quot;Quiz 1&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="13104:13692" ph="[...]" />
-            <marker date="1474842291000" expanded="true" signature="13138:13383" ph="{&quot;name&quot;: &quot;Midterm Exam&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="13417:13660" ph="{&quot;name&quot;: &quot;Final Exam&quot;...}" />
-            <marker date="1474842291000" expanded="true" signature="13826:13969" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teacher-classroom.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1201,7 +1114,7 @@
     <entry file="file://$PROJECT_DIR$/src/student-home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="52" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <caret line="54" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1210,19 +1123,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/student-store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="56" column="89" selection-start-line="56" selection-start-column="89" selection-end-line="56" selection-end-column="89" />
+        <state relative-caret-position="-1828">
+          <caret line="58" column="89" selection-start-line="58" selection-start-column="89" selection-end-line="58" selection-end-column="89" />
           <folding>
             <element signature="n#style#0;n#bold#0;n#a#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4896#4903#0" expanded="true" />
+            <element signature="e#4942#4949#0" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6402#6409#0" expanded="true" />
+            <element signature="e#6448#6455#0" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7920#7927#0" expanded="true" />
+            <element signature="e#7966#7973#0" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#7;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#9434#9441#0" expanded="true" />
+            <element signature="e#9480#9487#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="86" column="64" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
