@@ -25,11 +25,11 @@
 
         <div class="navbar-collapse collapse">
             <ul id="topnavsection" class="nav navbar-nav">
-                
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li id="navImport"><a href="teacher-home.html"><span class="glyphicon glyphicon-home"/></a>
-                    </li>
+                </li>
                 <li class="dropdown" style="z-index: 10">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b
                             class="caret"></b></a>
@@ -56,19 +56,18 @@
 </div>
 
 <div class="container">
-    <div class="row text-header">
-        <div class="col-sm-12">
-            <h1>Teacher Schedule</h1>
-        </div>
-        <!--<div class="col-sm-8">-->
-        <!--&lt;!&ndash;     <div class="alert alert-dismissable alert-info"> &ndash;&gt;-->
-        <!--<p style="font-size:16px;">View your classrooms here, and accept students into your courses.</p>-->
-        <!--&lt;!&ndash;      </div> &ndash;&gt;-->
-        <!--</div>-->
+    <div class="col-sm-12">
+        <h1 class="page-header">Teacher Schedule</h1>
     </div>
+    <!--<div class="col-sm-8">-->
+    <!--&lt;!&ndash;     <div class="alert alert-dismissable alert-info"> &ndash;&gt;-->
+    <!--<p style="font-size:16px;">View your classrooms here, and accept students into your courses.</p>-->
+    <!--&lt;!&ndash;      </div> &ndash;&gt;-->
+    <!--</div>-->
+
     <div class="row">
 
-        <div class="col-sm-8">
+        <div class="col-sm-5">
             <h4>Courses Taught:</h4>
             <table id="uploadHistory" class="table table-striped table-hover">
                 <thead>
@@ -118,25 +117,23 @@
         if (!$(".validation-summary-errors").has("button").length) {
             $('.validation-summary-errors').prepend('<button type="button" class="close" data-dismiss="alert">×</button>');
         }
-        
-        var taught = $("#courses-taught");
-        for(var i = 0; i<db.courses.length; i++){
-          var trow = $("<tr onclick= \"document.location = 'teacher-classroom.html'\"></tr>");
-          
-          //Columns
-          var tcourse = $("<td>"+db.courses[i].coursename+"</td>");
-          var tassign = $("<td>"+db.courses[i].assignments.hw[db.courses[i].assignments.hw.length-1].name+"</td>");
-          var ttime = $("<td>"+db.courses[i].time+"</td>");
 
-          trow.append(tcourse);
-          trow.append(tassign);
-          trow.append(ttime);
-          taught.append(trow);
+        var taught = $("#courses-taught");
+        for (var i = 0; i < db.courses.length; i++) {
+            var trow = $("<tr onclick= \"document.location = 'teacher-classroom.html'\"></tr>");
+
+            //Columns
+            var tcourse = $("<td>" + db.courses[i].coursename + "</td>");
+            var tassign = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 1].name + "</td>");
+            var ttime = $("<td>" + db.courses[i].time + "</td>");
+
+            trow.append(tcourse);
+            trow.append(tassign);
+            trow.append(ttime);
+            taught.append(trow);
         }
-        
-      
-        
-        
+
+
     });
 
     $("form").each(function () {
@@ -156,7 +153,6 @@
 
 
 </script>
-
 
 
 </body>

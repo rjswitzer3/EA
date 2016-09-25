@@ -19,8 +19,8 @@
             background: #e9e9e9;
         }
 
-        .highlight {
-            background-color: red;
+        .table-striped tbody tr.highlight td {
+            background-color: #0d8b9e;
         }
 
     </style>
@@ -49,10 +49,10 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li id="navOrder"><a href="student-store.html"><span class="glyphicon glyphicon-gift"/></a></li>
-                  <li id="navImport"><a href="student-home.html"><span class="glyphicon glyphicon-home"/></a>
-                    </li>
+                <li id="navImport"><a href="student-home.html"><span class="glyphicon glyphicon-home"/></a>
+                </li>
                 <li class="dropdown" style="z-index: 10">
-                   
+
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b
                             class="caret"></b></a>
                     <ul class="dropdown-menu" style="z-index: 10">
@@ -80,19 +80,15 @@
 <div class="container">
 
 
-    <div class="row text-header">
-        <div class="col-sm-4">
-            <h1 id="studentName"></h1>
-            <section class="stdPoints">
-                <h4>Total Points: 234</h4>
-            </section>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="page-header" id="studentName"></h1>
+            <!--<h3 class="page-header">Total Points: 234</h3>-->
         </div>
-        <div class="col-sm-8">
-            <!--     <div class="alert alert-dismissable alert-info"> -->
-            <p style="font-size:16px;">View your assignments here, and choose courses to add to your schedule.</p>
-            <!--      </div> -->
-        </div>
+
     </div>
+
+
     <div class="row">
         <div class="col-sm-5">
             <div class="row">
@@ -101,6 +97,7 @@
                     <thead>
                     <tr>
                         <th>Course</th>
+                        <th>Course ID</th>
                         <th>Teacher</th>
                         <th>Times</th>
                         <th>Grade</th>
@@ -123,80 +120,25 @@
                 <table id="uploadHistory" class="table table-striped table-hover">
                     <thead>
                     <tr>
-                        <th>REMOVE PLS</th>
                         <th>Type</th>
                         <th>Name</th>
                         <th>Grade</th>
                         <th>Date</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            Calculus I
-                        </td>
-                        <td>
-                            HW 1 - Integrals
-                        </td>
-                        <td>
-                            hw1.pdf
-                        </td>
-                        <td>
-                            <input id="item_Message" name="item.Message" type="hidden" value=""/>
-                            88
-                        </td>
-                        <td>
-                            7/03/2016
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Linear Algebra
-                        </td>
-                        <td>
-                            Quiz 1 - Matricies
-                        </td>
-                        <td>
-                            q1.docx
-                        </td>
-                        <td>
-                            <input id="item_Message" name="item.Message" type="hidden" value=""/>
-                            77
-                        </td>
-                        <td>
-                            7/21/2016
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Linear Algebra
-                        </td>
-                        <td>
-                            HW 1 - Review
-                        </td>
-                        <td>
-                            hw1.pdf
-                        </td>
-                        <td>
-                            <input id="item_Message" name="item.Message" type="hidden" value=""/>
-                            69
-                        </td>
-                        <td>
-                            7/15/2016
-                        </td>
-                    </tr>
+                    <tbody id="assignmentList">
 
                     </tbody>
                 </table>
-            </div>
         </div>
+    </div>
     </div>
 
     <div id="hiddenProgress" style="display: none;">
         <div class="progress progress-striped active">
             <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0"
                  aria-valuemax="100" style="width: 0%">
-            </div>
+        </div>
         </div>
     </div>
 
@@ -228,30 +170,93 @@
             $('.validation-summary-errors').prepend('<button type="button" class="close" data-dismiss="alert">×</button>');
         }
 
-        $("#studentName").html(db.student.firstname + " " + db.student.lastname + " -- Student HomePage")
+        $("#studentName").html(db.student.firstname + " " + db.student.lastname + " | Home");
 
-        var table = $("#courseSchedule");
-        for(var i = 0; i < db.courses.length; i++){
+        var courseTable = $("#courseSchedule");
+        for (var i = 0; i < db.courses.length; i++) {
             var trow = $("<tr class='course' id='" + "course" + i + "'></tr>");
 
 
             //Columns
-            var tcourse = $("<td>"+db.courses[i].coursename+"</td>");
+            var tcourse = $("<td>" + db.courses[i].coursename.toUpperCase() + "</td>");
+            var tcourseId = $("<td>" + db.courses[i].courseId + "</td>");
             var tteacher = $("<td>" + db.courses[i].teacher + "</td>");
             var ttime = $("<td>" + db.courses[i].time + "</td>");
-            var tgrade = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length-2].grade + "</td>");
-            var tlast = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length-2].date + "</td>")
+            var tgrade = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 2].grade + "</td>");
+            var tlast = $("<td>" + db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 2].date + "</td>")
 
 
             trow.append(tcourse);
+            trow.append(tcourseId);
             trow.append(tteacher);
             trow.append(ttime);
             trow.append(tgrade);
             trow.append(tlast);
-            console.log(db.courses[i].assignments.hw[db.courses[i].assignments.hw.length-2].grade);
-            table.append(trow);
+            console.log(db.courses[i].assignments.hw[db.courses[i].assignments.hw.length - 2].grade);
+            courseTable.append(trow);
 
         }
+
+        $("table tr").click(function () {
+            var selected = $(this).hasClass("highlight");
+            $("table tr").removeClass("highlight");
+            if (!selected)
+                $(this).addClass("highlight");
+
+            var rowIndex = this.rowIndex - 1;
+            var assignmentTable = $("#assignmentList");
+            assignmentTable.empty();
+
+            for (var i = 0; i < db.courses[rowIndex].assignments.hw.length; i++) {
+                console.log("Making AssignmentList");
+                var trow = $("<tr class='assignmentItem' id='" + "assignmentItem" + i + "'></tr>");
+                //Columns
+                var ttype = $("<td>" + "HW" + "</td>");
+                var tname = $("<td>" + db.courses[rowIndex].assignments.hw[i].name + "</td>");
+                var tgrade = $("<td>" + db.courses[rowIndex].assignments.hw[i].grade + "</td>");
+                var tdate = $("<td>" + db.courses[rowIndex].assignments.hw[i].date + "</td>");
+//
+                trow.append(ttype);
+                trow.append(tname);
+                trow.append(tgrade);
+                trow.append(tdate);
+
+                assignmentTable.append(trow);
+            }
+            for (var i = 0; i < db.courses[rowIndex].assignments.quiz.length; i++) {
+                console.log("Making AssignmentList");
+                var trow = $("<tr class='assignmentItem' id='" + "assignmentItem" + i + "'></tr>");
+                //Columns
+                var ttype = $("<td>" + "QUIZ" + "</td>");
+                var tname = $("<td>" + db.courses[rowIndex].assignments.quiz[i].name + "</td>");
+                var tgrade = $("<td>" + db.courses[rowIndex].assignments.quiz[i].grade + "</td>");
+                var tdate = $("<td>" + db.courses[rowIndex].assignments.quiz[i].date + "</td>");
+//
+                trow.append(ttype);
+                trow.append(tname);
+                trow.append(tgrade);
+                trow.append(tdate);
+
+                assignmentTable.append(trow);
+            }
+            for (var i = 0; i < db.courses[rowIndex].assignments.test.length; i++) {
+                console.log("Making AssignmentList");
+                var trow = $("<tr class='assignmentItem' id='" + "assignmentItem" + i + "'></tr>");
+                //Columns
+                var ttype = $("<td>" + "TEST" + "</td>");
+                var tname = $("<td>" + db.courses[rowIndex].assignments.test[i].name + "</td>");
+                var tgrade = $("<td>" + db.courses[rowIndex].assignments.test[i].grade + "</td>");
+                var tdate = $("<td>" + db.courses[rowIndex].assignments.test[i].date + "</td>");
+//
+                trow.append(ttype);
+                trow.append(tname);
+                trow.append(tgrade);
+                trow.append(tdate);
+
+                assignmentTable.append(trow);
+            }
+        });
+
 
     });
 
@@ -268,13 +273,6 @@
                 return false;
             }
         });
-    });
-
-    $("#course tr").click(function () {
-        var selected = $(this).hasClass("highlight");
-        $("#course tr").removeClass("highlight");
-        if (!selected)
-            $(this).addClass("highlight");
     });
 
 

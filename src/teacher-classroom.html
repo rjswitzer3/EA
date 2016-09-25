@@ -1,210 +1,209 @@
 <html lang="en" manifest="cache.manifest">
-  <head>
-      <meta charset="utf-8">
-      <title>Eager Academy | Classroom</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" href="img/title_logo.png" type="image/x-icon">
-      <link href="css/_layout.css" rel="stylesheet"/>
-  
-  </head>
-  
-  <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="img/EA_Logo.png" alt="Agora"
-                                                               style="margin-top: -8px; max-height: 160%"/></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul id="topnavsection" class="nav navbar-nav">
-                    
-                    
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="navImport"><a href="teacher-home.html"><span class="glyphicon glyphicon-home"/></a>
-                    </li>
-                    <li class="dropdown" style="z-index: 10">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b class="caret"></b></a>
-                        <ul class="dropdown-menu" style="z-index: 10">
-                            <li class="main-nav-link"><a href="teacher-edit-info.html">Account</a></li>
-                            <li class="main-nav-link"><a href="create-course.html">Courses</a></li>
-    
-                            <li class="main-nav-link">
-                                <form action="/Account/LogOff" id="logoutForm" method="post"><input
-                                        name="__RequestVerificationToken" type="hidden"
-                                        value="8Z2kOh0R0gFDHCk6X4Al5dKGqpZcuBkKvWhvJWmH9p8VNojZ1TytuQ5IaldoRN309V4i8SCfYJAvnlukRyceFfv_tfCMX9oESuA4Zz8_Md0lrVkACgU_YDyYq8VRSlDWQgccVlabnpZnsYs7icd9dJFfQu5EQW7pD1sqranDisk1"/>
-                                    <a class="logout" href="login.html">Log off</a>
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-    
-            </div><!--/.nav-collapse -->
+<head>
+    <meta charset="utf-8">
+    <title>Eager Academy | Classroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/title_logo.png" type="image/x-icon">
+    <link href="css/_layout.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/EA_Logo.png" alt="Agora"
+                                                           style="margin-top: -8px; max-height: 160%"/></a>
         </div>
+        <div class="navbar-collapse collapse">
+            <ul id="topnavsection" class="nav navbar-nav">
+
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="navImport"><a href="teacher-home.html"><span class="glyphicon glyphicon-home"/></a>
+                </li>
+                <li class="dropdown" style="z-index: 10">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"/><b
+                            class="caret"></b></a>
+                    <ul class="dropdown-menu" style="z-index: 10">
+                        <li class="main-nav-link"><a href="teacher-edit-info.html">Account</a></li>
+                        <li class="main-nav-link"><a href="teacher-home.html">Courses</a></li>
+
+                        <li class="main-nav-link">
+                            <form action="/Account/LogOff" id="logoutForm" method="post"><input
+                                    name="__RequestVerificationToken" type="hidden"
+                                    value="8Z2kOh0R0gFDHCk6X4Al5dKGqpZcuBkKvWhvJWmH9p8VNojZ1TytuQ5IaldoRN309V4i8SCfYJAvnlukRyceFfv_tfCMX9oESuA4Zz8_Md0lrVkACgU_YDyYq8VRSlDWQgccVlabnpZnsYs7icd9dJFfQu5EQW7pD1sqranDisk1"/>
+                                <a class="logout" href="login.html">Log off</a>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
     </div>
-    
-    <div class="container">
-      <div class="row">
-        <legend>
-          <hgroup id="course" class="title">
+</div>
 
-          </hgroup>
-          <p id="courseCode" style="font-size: small"></p>
-        </legend>
-      </div>
-      
-      <div class="row">
+<div class="container">
+    <div class="row">
+        <h1 id="course" class="page-header">
+        </h1>
+
+    </div>
+
+    <div class="row">
         <div class="col-sm-7 well">
-          <!-- ASSIGNMENTS-->
-          <section id="loginForm">
-            <legend>
-              <hgroup class="title">
-                <h1><i>Assignments</i></h1>
-              </hgroup>
-              <p style="font-size: small">View and grade your assignments.</p>
-            </legend>
-              
-            <div class="row well">
-              <div class="col-sm-11">
-                <h4>HOMEWORK</h4>
-              </div>
-              <div class="col-sm-1">
-                <br><a id="hw" ><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-1"></div>
-              <div id="hw-col" class="col-sm-11" data-hw="false">
-                
-              </div>
-            </div>
-            
-            <div class="row well">
-              <div class="col-sm-11">
-                <h4>QUIZES</h4>
-              </div>
-              <div class="col-sm-1">
-                <br><a id="quiz" href="teacher-classroom.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-              </div>
-            </div>
-            <div id="quiz-row" class="row">
-              
-            </div>
-            
-            <div class="row well">
-              <div class="col-sm-11">
-                <h4>TESTS</h4>
-              </div>
-              <div class="col-sm-1">
-                <br><a id="test" href="teacher-classroom.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-              </div>
-            </div>
-            <div id="test-row" class="row">
-              
-            </div>
+            <!-- ASSIGNMENTS-->
+            <section id="loginForm">
+                <legend>
+                    <hgroup class="title">
+                        <h1><i>Assignments</i></h1>
+                    </hgroup>
+                    <p style="font-size: small">View and grade your assignments.</p>
+                </legend>
 
-          </section>
-  
+                <div class="row well">
+                    <div class="col-sm-11">
+                        <h4>HOMEWORK</h4>
+                    </div>
+                    <div class="col-sm-1">
+                        <br><a id="hw"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div id="hw-col" class="col-sm-11" data-hw="false">
+
+                    </div>
+                </div>
+
+                <div class="row well">
+                    <div class="col-sm-11">
+                        <h4>QUIZES</h4>
+                    </div>
+                    <div class="col-sm-1">
+                        <br><a id="quiz" href="teacher-classroom.html"><span
+                            class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    </div>
+                </div>
+                <div id="quiz-row" class="row">
+
+                </div>
+
+                <div class="row well">
+                    <div class="col-sm-11">
+                        <h4>TESTS</h4>
+                    </div>
+                    <div class="col-sm-1">
+                        <br><a id="test" href="teacher-classroom.html"><span
+                            class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    </div>
+                </div>
+                <div id="test-row" class="row">
+
+                </div>
+
+            </section>
+
         </div>
-        
+
         <div class="col-sm-1">
-          <!--FORMATING -->
+            <!--FORMATING -->
         </div>
-        
+
         <!-- div class="col-sm-4 well">
           <!-- CLASS LIST-->
-          <!--section id="loginForm">
+        <!--section id="loginForm">
 
-            <legend>
-              <hgroup class="title">
-                <h1><i>Class List</i></h1>
-              </hgroup>
-              <p style="font-size: small">Currently enrolled students</p><br>
-              <div class="row">
-                <div class="col-sm-10"><p style="font-size: small"><b>Student Name</b></p></div>
-                <div class="col-sm-2"><p style="font-size: small"><b>Grade</b></p></div>
-              </div>
-            </legend>
+          <legend>
+            <hgroup class="title">
+              <h1><i>Class List</i></h1>
+            </hgroup>
+            <p style="font-size: small">Currently enrolled students</p><br>
+            <div class="row">
+              <div class="col-sm-10"><p style="font-size: small"><b>Student Name</b></p></div>
+              <div class="col-sm-2"><p style="font-size: small"><b>Grade</b></p></div>
+            </div>
+          </legend>
 
-            <div class="row well">
-              <div class="col-sm-11">Robert Smith</div>
-              <div class="col-sm-1">B+</div>
-            </div>
-            <div class="row well">
-              <div class="col-sm-11">John Doe</div>
-              <div class="col-sm-1">A-</div>
-            </div>
-            <div class="row well">
-              <div class="col-sm-11">Sarah Shaw</div>
-              <div class="col-sm-1">A</div>
-            </div>
-            <div class="row well">
-              <div class="col-sm-11">Joe Shmoe</div>
-              <div class="col-sm-1">C+</div>
-            </div>
-            <div class="row well">
-              <div class="col-sm-11">Brian Muler</div>
-              <div class="col-sm-1">B-</div>
-            </div>
-            
-          </section>
-        </div-->
-        
-      </div>
+          <div class="row well">
+            <div class="col-sm-11">Robert Smith</div>
+            <div class="col-sm-1">B+</div>
+          </div>
+          <div class="row well">
+            <div class="col-sm-11">John Doe</div>
+            <div class="col-sm-1">A-</div>
+          </div>
+          <div class="row well">
+            <div class="col-sm-11">Sarah Shaw</div>
+            <div class="col-sm-1">A</div>
+          </div>
+          <div class="row well">
+            <div class="col-sm-11">Joe Shmoe</div>
+            <div class="col-sm-1">C+</div>
+          </div>
+          <div class="row well">
+            <div class="col-sm-11">Brian Muler</div>
+            <div class="col-sm-1">B-</div>
+          </div>
+
+        </section>
+      </div-->
+
     </div>
-    <script src="js/nav_cog.js"></script>
-    <script src="js/_nav.js"></script>
-    <script src="js/_import.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        var db =JSON.parse(localStorage.getItem('db'));
-        
-        //Hardcoded for Calculus 1
-        $("#course").append("<h1><i>"+db.courses[0].coursename.toUpperCase()+"</i></h1>");
-        $("#courseCode").append(db.courses[0].courseId);
+</div>
+<script src="js/nav_cog.js"></script>
+<script src="js/_nav.js"></script>
+<script src="js/_import.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var db = JSON.parse(localStorage.getItem('db'));
 
-        
-        $("#hw").click(function(){
-          var hws = $("#hw-col");
-          
-          if(hws.attr('data-hw') == "false"){
-            hws.attr({
-              "data-hw":"true",
-            });
-            var course = db.courses[0];
-          
-            for(var i = 0; i<course.assignments.hw.length; i++){
-              var ahw = course.assignments.hw[i];
-              var thw = $("<div class=\"row well\"></div>");
-              var hw = $("<div class=\"col-sm-11\"><p style=\"font-size: small\">"+ahw.name+"</p></div><div class=\"col-sm-1\"><a href=\"teacher-classroom-grades.html\"><span class=\"glyphicon glyphicon-menu-hamburger\"></span></a></div>");
-              
-              thw.append(hw);
-              hws.append(thw);
+        //Hardcoded for Calculus 1
+        $("#course").append("<h1>" + db.courses[0].coursename.toUpperCase() + " | " + db.courses[0].courseId + "</h1>");
+//        $("#courseCode").append(db.courses[0].courseId);
+
+
+        $("#hw").click(function () {
+            var hws = $("#hw-col");
+
+            if (hws.attr('data-hw') == "false") {
+                hws.attr({
+                    "data-hw": "true",
+                });
+                var course = db.courses[0];
+
+                for (var i = 0; i < course.assignments.hw.length; i++) {
+                    var ahw = course.assignments.hw[i];
+                    var thw = $("<div class=\"row well\"></div>");
+                    var hw = $("<div class=\"col-sm-11\"><p style=\"font-size: small\">" + ahw.name + "</p></div><div class=\"col-sm-1\"><a href=\"teacher-classroom-grades.html\"><span class=\"glyphicon glyphicon-menu-hamburger\"></span></a></div>");
+
+                    thw.append(hw);
+                    hws.append(thw);
+                }
+
+            } else {
+                hws.attr({
+                    "data-hw": "false",
+                });
+
+                hws.empty();
             }
-            
-          }else{
-            hws.attr({
-              "data-hw":"false",
-            });
-            
-            hws.empty();
-          }
-          
-          
+
+
         });
-          
-        
-        
-      });
-    </script>
-    
-    
-  </body>
+
+
+    });
+</script>
+
+
+</body>
 
 </html>

@@ -93,28 +93,122 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#" onclick="window.confirm('Are you sure you want to redeem your points for Harambe?')">
-                    <img class="img-responsive" src="images/harambe.png" alt="">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target="#harambeModal">
+                    <img class="img-responsive" src="images/harambe.png" alt="" style="width:360px;height:270px">
                     <h4>Harambe - &infin; Points</h4>
                 </a>
             </div>
+            <!-- Modal -->
+            <div id="harambeModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">HARAMBE</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to redeem this?</p>
+                            <button type="submit" class="btn btn-success btn-block"
+                                    onclick="document.location = 'student-store.html'"><span
+                                    class="glyphicon glyphicon-off"></span>REDEEM
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    <h4>PlaceHolder - 20 Points</h4>
+                <a class="thumbnail" href="#" data-toggle="modal" data-target="#dscModal">
+                    <img class="img-responsive" src="img/store1.png" alt="" style="width:360px;height:270px">
+                    <h4>DSC - 20 Points</h4>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    <h4>PlaceHolder - 20 Points</h4>
-                </a>
+            <div id="dscModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Dollar Shave Club</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to redeem this?</p>
+                            <button type="submit" class="btn btn-success btn-block"
+                                    onclick="document.location = 'student-store.html'"><span
+                                    class="glyphicon glyphicon-off"></span>REDEEM
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    <h4>PlaceHolder - 20 Points</h4>
+                <a class="thumbnail" href="#" data-toggle="modal" data-target="#foodModal">
+                    <img class="img-responsive" src="img/store2.png" alt="" style="width:360px;height:270px">
+                    <h4>Food - 20 Points</h4>
                 </a>
+            </div>
+            <div id="foodModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Food</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to redeem this?</p>
+                            <button type="submit" class="btn btn-success btn-block"
+                                    onclick="document.location = 'student-store.html'"><span
+                                    class="glyphicon glyphicon-off"></span>REDEEM
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-toggle="modal" data-target="#spotifyModal">
+                    <img class="img-responsive" src="img/store3.png" alt="" style="width:360px;height:270px">
+                    <h4>Spotify - 20 Points</h4>
+                </a>
+            </div>
+            <div id="spotifyModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Spotify</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to redeem this?</p>
+                            <button type="submit" class="btn btn-success btn-block"
+                                    onclick="document.location = 'student-store.html'"><span
+                                    class="glyphicon glyphicon-off"></span>REDEEM
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
@@ -174,14 +268,14 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="js/nav_cog.js"></script>
     <script src="js/_nav.js"></script>
     <script src="js/_import.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript"></script>
 
 </body>
 
