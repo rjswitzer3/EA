@@ -276,8 +276,8 @@
         updateNavBars(controllerName, actionName);
         var str_db = localStorage.getItem('db');
         var db = JSON.parse(str_db);
-        console.log(db);
-        console.log(db.courses[0].assignments.hw[0].grade);
+        //console.log(db);
+        //console.log(db.courses[0].assignments.hw[0].grade);
 
         $('.validation-summary-errors').addClass('alert alert-dismissable alert-danger');
         if (!$(".validation-summary-errors").has("button").length) {
@@ -289,14 +289,14 @@
         )
 //        $("#hw1GradeInput").defaultValue = db.courses[0].assignments.hw[1].grade;
 
-        $("#hw1GradeInput").html("<input id='hw1GradeInput' type='number' min='0' max='100' size='3' value=" + db.courses[0].assignments.hw[0].grade + ">" + "<input type='submit' value='SAVE'>");
+        $("#hw1GradeInput").html("<input id='hw1GradeInputVal' type='number' min='0' max='100' size='3' value=" + db.courses[0].assignments.hw[0].grade + ">" + "<input type='submit' value='SAVE'>");
 
         $("#hw1GradeForm").submit(function (event) {
 
-            var hw1Value = $("#hw1GradeInput").val();
-            console.log(hw1Value);
+            var hw1Value = $("#hw1GradeInputVal").val();
+            //console.log(hw1Value);
             db.courses[0].assignments.hw[0].grade = hw1Value;
-            console.log(db.courses[0].assignments.hw[0].grade);
+            //console.log(db.courses[0].assignments.hw[0].grade);
             localStorage.setItem('db', JSON.stringify(db));
             event.preventDefault();
         });
